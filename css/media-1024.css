@@ -161,7 +161,7 @@
         margin-bottom: 15px;
     }
     .gallery-slide__img {
-        min-height: 315px;
+        max-height: 315px;
     }
     .gallery__right {
         padding: 9px 0 9px 6px;
