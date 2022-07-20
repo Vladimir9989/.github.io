@@ -90,7 +90,6 @@
     }
     .gallery-swiper-slide__img {
         max-height: 367px;
-        object-fit: contain;
     }
     .gallery__swiper-wrapper {
         margin-bottom: 7px;
@@ -254,6 +253,7 @@
     }
     .gallery-modals__left {
         max-width: 290px;
+        width: 100%;
         height: 200px;
     }
     .gallery-modals__img {
