@@ -1,0 +1,116 @@
+/* header */
+
+@media (max-width: 860px) {
+    .header-top__search--absolute {
+        top: 0;
+        bottom: 0;
+        right: 0px;
+        left: 0;
+        padding-left: 30px;
+        padding-right: 60px;
+        background-color: var(--color-black);
+        z-index: 15;
+    }
+    .header-search {
+        width: 96%;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        max-width: 698px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    /* about */
+    .about__container {
+        padding-bottom: 100px;
+    }
+    /* gallery */
+    .gallery__container {
+        flex-direction: column;
+        padding-bottom: 76px;
+    }
+    .galery__left {
+        width: 42%;
+        margin-bottom: 17px;
+    }
+    .gallery__checkbox {
+        margin-top: 25px;
+    }
+    .gallery__right {
+        width: 100%;
+        padding: 0;
+    }
+    .gallery-slide__img {
+        min-height: 330px;
+    }
+    /* catalog */
+    .catalog__container {
+        padding-bottom: 96px;
+    }
+    .catalog__content {
+        flex-direction: column-reverse;
+    }
+    .catalog__left {
+        width: 100%;
+    }
+    .catalog__right {
+        width: 100%;
+        margin-bottom: 46px;
+    }
+    .catalog-accordion__list {
+        column-count: 3;
+    }
+    .catalog__text {
+        margin-bottom: 19px;
+    }
+    .catalog__img {
+        margin-bottom: 17px;
+    }
+    .catalog__date {
+        margin-bottom: 5px;
+    }
+    /* projects */
+    .projects__container {
+        padding-bottom: 89px;
+    }
+    .projects__text {
+        margin-bottom: 63px;
+    }
+    .projects__subtitle {
+        margin-bottom: 31px;
+    }
+    /* contacts */
+    .contacts__top {
+        padding-bottom: 38px;
+    }
+    .contacts-form__label {
+        margin-bottom: 13px;
+    }
+    .contacts-form__input {
+        padding: 15px 106px 15px 20px;
+        margin: 0;
+    }
+    .contacts-form__btn {
+        padding: 14px 44px 11px 29px;
+    }
+    .contacts-messengers {
+        margin-top: 13px;
+    }
+    .contacts-messengers__title {
+        padding-top: 7px;
+        margin-bottom: 9px;
+    }
+    /* footer */
+    .footer__container {
+        padding-bottom: 36px;
+    }
+    /* modals */
+    .gallery-modals__img {
+        max-width: 301px;
+    }
+    .gallery-modals__right {
+        max-width: 367px;
+    }
+}

@@ -1,0 +1,17 @@
+@media (max-width: 1340px) {
+    .header__logo {
+        margin-right: 30px;
+    }
+    .header-top__item:not(:last-child) {
+        margin-right: 10px;
+    }
+    .header-bottom-nav__item:not(:last-child) {
+        margin-right: 10px;
+    }
+    .header-search__label {
+        width: 180px;
+    }
+    .catalog-accordion__right {
+        max-width: 50%;
+    }
+}
