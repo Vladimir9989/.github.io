@@ -110,10 +110,12 @@
         display: block;
     }
     .header-search__input {
+        color: var(--color-white);
         margin: 0 10px;
         height: 30px;
         background-color: var(--color-black);
         border: none;
+        outline: none;
         border-bottom: 1px solid var(--color-white);
         width: 100%;
     }
