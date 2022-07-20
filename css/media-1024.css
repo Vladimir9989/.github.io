@@ -127,13 +127,13 @@
     .hero__container {
         padding-top: 40px;
     }
-    .hero-swiper-slide_1 {
+    .hero-swiper-slide-1 {
         background-image: url(../img/hero-1024-img1.jpg);
     }
-    .hero-swiper-slide_2 {
+    .hero-swiper-slide-2 {
         background-image: url(../img/hero-1024-img2.jpg);
     }
-    .hero-swiper-slide_3 {
+    .hero-swiper-slide-3 {
         background-image: url(../img/hero-1024-img3.jpg );
     }
     .hero__title {
@@ -148,7 +148,7 @@
         min-height: 560px;
         padding-bottom: 66px;
     }
-    .galery__left {
+    .gallery__left {
         width: 30%;
     }
     .gallery__checkbox {
@@ -160,7 +160,7 @@
     .gallery__label {
         margin-bottom: 15px;
     }
-    .gallery-slide__img {
+    .gallery-swiper-slide__img {
         max-height: 315px;
     }
     .gallery__right {
@@ -198,7 +198,7 @@
     .events__title {
         margin-bottom: 17px;
     }
-    .events-slide__img {
+    .events-swiper-slide__img {
         min-height: 200px;
     }
     .events__descr {
@@ -223,7 +223,7 @@
     .pagination-container {
         display: flex;
     }
-    .events-button__pagination {
+    .events-button-pagination {
         margin: 0 auto;
         display: flex;
         position: static;

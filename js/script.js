@@ -28,7 +28,7 @@ menuLinks.forEach(function(el) {
 
 let search = document.querySelector('.header-top__btn-icon');
 let searchMenu = document.querySelector('.header-search');
-let searchClose = document.querySelector('.header-search__close');
+let searchClose = document.querySelector('.header-search-close');
 let searchAbsolute = document.querySelector('.header-top__search')
 
 
@@ -68,7 +68,7 @@ function controlDropdowns() {
     });
 
     document.addEventListener('click', (event) => {
-        if (event.target.classList.contains('header-dropdown__container')) {
+        if (event.target.classList.contains('header-dropdown')) {
             return;
         } else {
             closeDropdowns();
@@ -215,8 +215,8 @@ tabsBtn.forEach(function(element) {
         tabsBtn.forEach(function(btn) { btn.classList.remove('catalog-accordion__btn--active') });
         e.currentTarget.classList.add('catalog-accordion__btn--active');
 
-        tabsItem.forEach(function(element) { element.classList.remove('artist--visible') });
-        document.querySelector(`[data-target="${path}"]`).classList.add('artist--visible');
+        tabsItem.forEach(function(element) { element.classList.remove('catalog__artist--visible') });
+        document.querySelector(`[data-target="${path}"]`).classList.add('catalog__artist--visible');
 
     });
 });
@@ -230,7 +230,7 @@ const myEventsGallery = new Swiper(eventsSlider, {
     spaceBetween: 50,
 
     pagination: {
-        el: '.events-button__pagination',
+        el: '.events-button-pagination',
 
     },
 

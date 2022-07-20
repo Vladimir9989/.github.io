@@ -80,7 +80,7 @@
     .gallery__checkbox {
         margin-top: 15px;
     }
-    .galery__left {
+    .gallery__left {
         width: 100%;
     }
     .gallery-swiper-container {
@@ -88,7 +88,7 @@
         flex-direction: column-reverse;
         align-items: center;
     }
-    .gallery-slide__img {
+    .gallery-swiper-slide__img {
         max-height: 367px;
         object-fit: contain;
     }
