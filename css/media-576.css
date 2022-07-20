@@ -89,7 +89,8 @@
         align-items: center;
     }
     .gallery-slide__img {
-        min-height: 367px;
+        max-height: 367px;
+        object-fit: contain;
     }
     .gallery__swiper-wrapper {
         margin-bottom: 7px;
