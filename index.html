@@ -3,1037 +3,751 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="libs/simplebar.css">
-    <link rel="stylesheet" href="libs/swiper-bundle.min.css">
-    <link rel="stylesheet" href="libs/choices.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/media-1340.css">
-    <link rel="stylesheet" href="css/media-1024.css">
-    <link rel="stylesheet" href="css/media-768.css">
-    <link rel="stylesheet" href="css/media-576.css">
-
-
-    <script defer src="libs/simplebar.js"></script>
-    <script defer src="libs/swiper-bundle.min.js"></script>
-    <script defer src="libs/choices.min.js"></script>
-    <script defer src="libs/jquery-1.12.4.js"></script>
-    <script defer src="libs/jquery-ui.js"></script>
-    <script defer src="libs/just-validate.min.js"></script>
-    <script defer src="libs/inputmask.min.js"></script>
-
-
+    <title>Требования к макетам</title>
+    <link rel="stylesheet" href="normalize.scss?_v=20241002141728">
+    <link rel="stylesheet" href="main.css?_v=20241002141728">
+    <link rel="icon" href="images/img/favicon.ico">
+    <script defer src="vendor.js?_v=20241002141728"></script>
+    <script defer src="app.js?_v=20241002141728"></script>
 </head>
 
 <body>
-
-    <header class="header">
-        <div class="header-top">
-            <div class="container">
-                <div class="header-top__container flex">
-                    <button class="burger btn-reset" tabindex="0">
-                        <span class="burger__line"></span>
-                        <span class="burger__line"></span>
-                        <span class="burger__line"></span>
-                    </button>
-
-                    <a href="#" class="header__logo">
-                        <img class="logo-img" src="img/header-logo.svg" alt="Логотип">
-                    </a>
-
-
-                    <div class="header-top__menu flex">
-                        <nav class="header-top__nav flex">
-                            <ul class="header-top__list list-reset flex">
-                                <li class="header-top__item">
-                                    <a href="#about" class="header-top__link">О нас</a>
-                                </li>
-                                <li class="header-top__item">
-                                    <a href="#gallery" class="header-top__link">Галерея</a>
-                                </li>
-                                <li class="header-top__item">
-                                    <a href="#catalog" class="header-top__link">Каталог</a>
-                                </li>
-                                <li class="header-top__item">
-                                    <a href="#events" class="header-top__link">События</a>
-                                </li>
-                                <li class="header-top__item">
-                                    <a href="#projects" class="header-top__link">Проекты</a>
-                                </li>
-                                <li class="header-top__item">
-                                    <a href="#contacts" class="header-top__link">Контакты</a>
-                                </li>
-                            </ul>
-
-                        </nav>
-                        <button class="header-top__btn btn-reset">
-                            <span class="header__icon">
-                                <svg width="13" height="13" viewBox="0 0 13 13" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path
-                                        d="M5.12056 9.09278L6.13889 10.1111L9.75 6.5L6.13889 2.88889L5.12056 3.90722L6.98389 5.77778H0V7.22222H6.98389L5.12056 9.09278ZM11.5556 0H1.44444C0.642778 0 0 0.65 0 1.44444V4.33333H1.44444V1.44444H11.5556V11.5556H1.44444V8.66667H0V11.5556C0 12.35 0.642778 13 1.44444 13H11.5556C12.35 13 13 12.35 13 11.5556V1.44444C13 0.65 12.35 0 11.5556 0Z"
-                                        fill="white" />
-                                </svg>
-
-                            </span>
-                            Войти
-                        </button>
+    <section class="vacancy">
+        <div class="container vacancy__container">
+            <h1 class="vacancy__title">Требования к макетам</h1>
+            <ul class="vacancy__list">
+                <li class="vacancy__item">
+                    <div class="vacancy__item-title">
+                        <h3 class="vacancy__name">1. Требования к носителям информации.</h3>
+                        <span class="vacancy__price"></span>
                     </div>
-
-                    <div class="header-top__search flex">
-                        <button class="header-top__btn-icon btn-reset"><svg width="30" height="29" viewBox="0 0 30 29"
-                                fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <rect width="9.15446" height="2.28862"
-                                    transform="matrix(-0.718931 0.695081 0.718931 0.695081 6.58105 21.0461)"
-                                    fill="white" />
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M16.1246 24.174C10.0376 24.174 5.32763 19.2726 5.32763 13.5104C5.32763 7.74823 10.0376 2.84676 16.1246 2.84676C22.2115 2.84676 26.9215 7.74823 26.9215 13.5104C26.9215 19.2726 22.2115 24.174 16.1246 24.174ZM16.1246 26.8399C8.76285 26.8399 2.79502 20.8721 2.79502 13.5104C2.79502 6.14869 8.76285 0.180847 16.1246 0.180847C23.4863 0.180847 29.4541 6.14869 29.4541 13.5104C29.4541 20.8721 23.4863 26.8399 16.1246 26.8399Z"
-                                    fill="white" />
-                            </svg>
-                        </button>
-                        <div class="header-search flex">
-
-                            <input type="search" name="search" class="header-search__input">
-
-                        </div>
-                    </div>
-                    <button class="header-search-close btn-reset"><svg width="23" height="23" viewBox="0 0 23 23"
-                            fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <rect width="29.567" height="2.9567"
-                                transform="matrix(0.707093 0.707121 -0.707093 0.707121 2.09375 0)" fill="white" />
-                            <rect width="29.567" height="2.9567"
-                                transform="matrix(0.707093 -0.707121 0.707093 0.707121 0 20.9074)" fill="white" />
-                        </svg>
-                    </button>
-
-
-
-
-
-                </div>
-            </div>
-
-        </div>
-        <div class="header-bottom">
-            <div class="container">
-                <div class="header-bottom__container flex">
-                    <nav class="header-bottom-nav">
-                        <ul class="header-bottom-nav__list list-reset flex">
-                            <li class="header-bottom-nav__item">
-                                <button class="header-bottom-nav__btn btn-reset">Реализм 
-                                    <span
-                                        class="header-bottom-nav__icon">
-                                        <svg width="12" height="7" viewBox="0 0 12 7" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M11 1L6 6L1 1" stroke="white" />
-                                        </svg>
-                                    </span>
-                                </button>
-                                <div class="header-dropdown">
-                                    <ul class="header-dropdown__list list-reset">
-                                        <li class="header-dropdown__item"><a href="#" class="header-dropdown__link header-dropdown__link_img1">Тинторетто</a>
-                                        </li>
-                                        <li class="header-dropdown__item"><a href="#" class="header-dropdown__link header-dropdown__link_img2">Фридрих</a>
-                                        </li>
-                                        <li class="header-dropdown__item"><a href="#" class="header-dropdown__link header-dropdown__link_img3">Леонардо</a>
-                                        </li>
-                                        <li class="header-dropdown__item"><a href="#" class="header-dropdown__link header-dropdown__link_img4">Верроккьо</a>
-                                        </li>
-                                        <li class="header-dropdown__item"><a href="#" class="header-dropdown__link header-dropdown__link_img4">Верроккьо</a>
-                                        </li>
-                                        <li class="header-dropdown__item"><a href="#" class="header-dropdown__link header-dropdown__link_img4">Верроккьо</a>
-                                        </li>
-
-                                    </ul>
-
-                                </div>
+                    <div class="vacancy__text">
+                        <ul class="vacancy__descr-list">
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                1.1 Данные должны предоставляться на носителях, обеспечивающих надежное считывание
+                                информации. Для надежности рекомендуется дублировать информацию (на одном или нескольких
+                                носителях).
+                                В работу принимаются следующие носители:
                             </li>
-                            <li class="header-bottom-nav__item">
-                                <button class="header-bottom-nav__btn btn-reset">Импрессионизм<span
-                                        class="header-bottom-nav__icon">
-                                        <svg width="12" height="7" viewBox="0 0 12 7" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M11 1L6 6L1 1" stroke="white" />
-                                        </svg>
-                                    </span></button>
-                                <div class="header-dropdown">
-                                    <ul class="header-dropdown__list list-reset">
-                                        <li class="header-dropdown__item"><a href="#" class="header-dropdown__link header-dropdown__link_img5">Моне</a>
-                                        </li>
-                                        <li class="header-dropdown__item"><a href="#" class="header-dropdown__link header-dropdown__link_img6">Сислей</a>
-                                        </li>
-                                        <li class="header-dropdown__item"><a href="#" class="header-dropdown__link header-dropdown__link_img7">Мане</a>
-                                        </li>
-                                        <li class="header-dropdown__item"><a href="#" class="header-dropdown__link header-dropdown__link_img8">Ренуар</a>
-                                        </li>
-                                        <li class="header-dropdown__item"><a href="#" class="header-dropdown__link header-dropdown__link_img8">Ренуар</a>
-                                        </li>
-                                        <li class="header-dropdown__item"><a href="#" class="header-dropdown__link header-dropdown__link_img8">Ренуар</a>
-                                        </li>
-
-                                    </ul>
-
-                                </div>
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                1.2 Компакт-диски CD-R, CD-RW, DVD, DVD-RW (стандарт ISO9660).
                             </li>
-
-                            <li class="header-bottom-nav__item">
-                                <button class="header-bottom-nav__btn btn-reset">Постимпрессионизм<span
-                                        class="header-bottom-nav__icon">
-                                        <svg width="12" height="7" viewBox="0 0 12 7" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M11 1L6 6L1 1" stroke="white" />
-                                        </svg>
-                                    </span></button>
-                                <div class="header-dropdown">
-                                    <ul class="header-dropdown__list list-reset">
-                                        <li class="header-dropdown__item"><a href="#" class="header-dropdown__link header-dropdown__link_img9">Ван Гог</a>
-                                        </li>
-                                        <li class="header-dropdown__item"><a href="#" class="header-dropdown__link header-dropdown__link_img10">Сезанн</a>
-                                        </li>
-                                        <li class="header-dropdown__item"><a href="#" class="header-dropdown__link header-dropdown__link_img11">Гоген</a>
-                                        </li>
-                                        <li class="header-dropdown__item"><a href="#" class="header-dropdown__link header-dropdown__link_img12">Сёра</a>
-                                        </li>
-                                        <li class="header-dropdown__item"><a href="#" class="header-dropdown__link header-dropdown__link_img12">Сёра</a>
-                                        </li>
-                                        <li class="header-dropdown__item"><a href="#" class="header-dropdown__link header-dropdown__link_img12">Сёра</a>
-                                        </li>
-
-                                    </ul>
-
-                                </div>
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                1.3 Устройства, поддерживающие USB при наличии драйверов к ним.
                             </li>
-                            <li class="header-bottom-nav__item">
-                                <button class="header-bottom-nav__btn btn-reset">Авангард<span
-                                        class="header-bottom-nav__icon">
-                                        <svg width="12" height="7" viewBox="0 0 12 7" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M11 1L6 6L1 1" stroke="white" />
-                                        </svg>
-                                    </span></button>
-                                <div class="header-dropdown">
-                                    <ul class="header-dropdown__list list-reset">
-                                        <li class="header-dropdown__item"><a href="#" class="header-dropdown__link header-dropdown__link_img13">Кандинский</a>
-                                        </li>
-                                        <li class="header-dropdown__item"><a href="#" class="header-dropdown__link header-dropdown__link_img14">Маринетти</a>
-                                        </li>
-                                        <li class="header-dropdown__item"><a href="#" class="header-dropdown__link header-dropdown__link_img15">Малевич</a>
-                                        </li>
-                                        <li class="header-dropdown__item"><a href="#" class="header-dropdown__link header-dropdown__link_img16">Пикассо</a>
-                                        </li>
-                                        <li class="header-dropdown__item"><a href="#" class="header-dropdown__link header-dropdown__link_img16">Пикассо</a>
-                                        </li>
-                                        <li class="header-dropdown__item"><a href="#" class="header-dropdown__link header-dropdown__link_img16">Пикассо</a>
-                                        </li>
-
-                                    </ul>
-
-                                </div>
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                1.4 Файлы в формате PDF также могут быть переданы через файловый сервер Исполнителя
+                                (ftp.lazurprint.ru) по протоколам FTP или SFTP, либо через систему автоматизированного
+                                приема и обработки файлов Prinect Remote Access (portal.lazurprint.ru). Для организации
+                                аккаунта на ftp-сервере или в системе Remote Access и получения реквизитов доступа
+                                необходимо связаться с отделом допечатной подготовки или с менеджером, ведущим ваш
+                                заказ.
                             </li>
-                            <li class="header-bottom-nav__item">
-                                <button class="header-bottom-nav__btn btn-reset">Футуризм<span
-                                        class="header-bottom-nav__icon">
-                                        <svg width="12" height="7" viewBox="0 0 12 7" fill="none"
-                                            xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M11 1L6 6L1 1" stroke="white" />
-                                        </svg>
-                                    </span></button>
-                                <div class="header-dropdown">
-                                    <ul class="header-dropdown__list list-reset">
-                                        <li class="header-dropdown__item"><a href="#" class="header-dropdown__link header-dropdown__link_img17">Карра</a>
-                                        </li>
-                                        <li class="header-dropdown__item"><a href="#" class="header-dropdown__link header-dropdown__link_img18">Прателла</a>
-                                        </li>
-                                        <li class="header-dropdown__item"><a href="#" class="header-dropdown__link header-dropdown__link_img19">Прателла</a>
-                                        </li>
-                                        <li class="header-dropdown__item"><a href="#" class="header-dropdown__link header-dropdown__link_img20">Балла</a>
-                                        </li>
-                                        <li class="header-dropdown__item"><a href="#" class="header-dropdown__link header-dropdown__link_img20">Балла</a>
-                                        </li>
-                                        <li class="header-dropdown__item"><a href="#" class="header-dropdown__link header-dropdown__link_img20">Балла</a>
-                                        </li>
-
-                                    </ul>
-
-                                </div>
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                1.5 При приеме файлов через интернет Исполнитель в состоянии обеспечить надлежащие
+                                скорость и качество приема файлов только через собственный файловый сервер
+                                (ftp.lazurprint.ru) или через сервер Remote Access. При передаче файлов Заказчиком
+                                посредством иных интернет-сервисов (электронная почта, ftp-серверы сторонних
+                                организаций, файлообменные сети и т.д.) Исполнитель не гарантирует надлежащих качества и
+                                скорости приема информации. Использование таких сервисов неизбежно влечет за собой
+                                увеличение времени, затрачиваемого Исполнителем на прием файлов, а в некоторых случаях
+                                делает прием файлов невозможным.
                             </li>
                         </ul>
-                    </nav>
-
-                    <form class="header-bottom-search flex">
-                        <button class="header-bottom-search__btn btn-reset" data-focus-visible-adden disabled>
-                            <svg width="23" height="22" viewBox="0 0 23 22" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <rect width="6.8678" height="1.71695"
-                                    transform="matrix(-0.718931 0.695081 0.718931 0.695081 4.9375 15.6534)"
-                                    fill="white" />
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M12.0967 18C7.53016 18 3.99668 14.3229 3.99668 10C3.99668 5.67715 7.53016 2 12.0967 2C16.6632 2 20.1967 5.67715 20.1967 10C20.1967 14.3229 16.6632 18 12.0967 18ZM12.0967 20C6.57383 20 2.09668 15.5228 2.09668 10C2.09668 4.47715 6.57383 0 12.0967 0C17.6195 0 22.0967 4.47715 22.0967 10C22.0967 15.5228 17.6195 20 12.0967 20Z"
-                                    fill="white" />
-                            </svg>
-
-                        </button>
-                        <label class="header-bottom-search__label">
-                            <input type="search" name="search" class="header-bottom-search__input"
-                                placeholder="Поиск по сайту">
-                        </label>
-                    </form>
-                </div>
-            </div>
-
-
-        </div>
-
-
-    </header>
-    <main class="main">
-        <section class="hero swiper-container hero-swiper-container" id="hero">
-            <div class="hero-swiper-wrapper swiper-wrapper">
-                <div class="swiper-slide hero-swiper-slade hero-swiper-slide-1"></div>
-                <div class="swiper-slide hero-swiper-slade hero-swiper-slide-2"></div>
-                <div class="swiper-slide hero-swiper-slade hero-swiper-slide-3"></div>
-            </div>
-            <div class="hero__container container">
-                <h1 class="main-title visually-hidden">Blanchard художественная галерея</h1>
-                <h2 class="hero__title">
-                    Прикоснитесь к&nbsp;прекрасному
-                </h2>
-
-                <p class="hero__text">Мы вынуждены отталкиваться от того, что реализация намеченных плановых заданий создаёт предпосылки для новых предложений.</p>
-                <a href="#contacts" class="hero__link">
-                    Подписаться на&nbsp;рассылку
-                </a>
-            </div>
-        </section>
-        <section class="about" id="about">
-            <div class="about__container container">
-                <h2 class="about__title">О&nbsp;нас</h2>
-                <p class="about__text">Ясность нашей позиции очевидна: семантический разбор внешних противодействий однозначно определяет каждого участника как способного принимать собственные решения касаемо распределения внутренних резервов и&nbsp;ресурсов. Не&nbsp;следует,
-                    однако, забывать, что высококачественный прототип будущего проекта влечёт за&nbsp;собой процесс внедрения и&nbsp;модернизации модели развития. Повседневная практика показывает, что высокое качество позиционных исследований создаёт
-                    необходимость включения в&nbsp;производственный план целого ряда внеочередных мероприятий с&nbsp;учётом комплекса распределения внутренних резервов и&nbsp;ресурсов. В&nbsp;рамках спецификации современных стандартов, действия представителей
-                    оппозиции набирают популярность среди определённых слоёв населения, а&nbsp;значит, должны быть разоблачены.
-                </p>
-            </div>
-        </section>
-        <section class="gallery" id="gallery">
-
-            <div class="gallery__container container">
-                <div class="gallery__left flex">
-                    <h2 class="gallery__title" id="gal">Галерея</h2>
-                    <span class="gallery__filter">Фильтр</span>
-                    <select name="selectGallery" id="selectGallery" class="gallery__select">
-                        <option value="Живопись">Живопись</option>
-                        <option value="Рисунок">Рисунок</option>
-                        <option value="Скульптура">Скульптура</option>
-
-                    </select>
-                    <div class="gallery__checkbox flex">
-                        <label class="gallery__label">
-                            <input type="checkbox" class="gallery__input">
-                            <span class="gallery__checkmark">XIX век</span>
-                        </label>
-
-                        <label class="gallery__label">
-                            <input type="checkbox" class="gallery__input">
-                            <span class="gallery__checkmark">XX век</span>
-                        </label>
-                        <label class="gallery__label">
-                            <input type="checkbox" class="gallery__input">
-                            <span class="gallery__checkmark">Современность</span>
-                        </label>
                     </div>
-
-                </div>
-                <div class="gallery__right">
-                    <div class="gallery-swiper-container swiper-container">
-                        <div class="gallery-button">
-                            <div class="gallery-button__prev swiper-button-prev swiper-button-gray">
-                                <svg class="swiper-button-gray__svg" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path class="swiper-button-gray__background"
-                                        d="M15 0.999999C7.26801 0.999999 1 7.26801 1 15C1 22.732 7.26801 29 15 29C22.732 29 29 22.732 29 15C29 7.26801 22.732 0.999998 15 0.999999Z"
-                                        fill="#666666" stroke="#666666" stroke-width="2" />
-                                    <path class="swiper-button-gray__triangle" d="M16 10L11 15L16 20" stroke="white" />
-                                </svg>
-                            </div>
-                            <div class="swiper-pagination gallery-button__pagination"></div>
-                            <div class="gallery-button__next swiper-button-next swiper-button-gray">
-                                <svg class="swiper-button-gray__svg" width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path class="swiper-button-gray__background"
-                                        d="M15 29C22.732 29 29 22.732 29 15C29 7.26801 22.732 0.999999 15 0.999999C7.26801 1 1 7.26801 1 15C1 22.732 7.26801 29 15 29Z"
-                                        fill="#666666" stroke="#666666" stroke-width="2" />
-                                    <path class="swiper-button-gray__triangle" d="M14 20L19 15L14 10" stroke="white" />
-                                </svg>
-                            </div>
-                        </div>
-                        <div class="gallery__swiper-wrapper swiper-wrapper">
-                            <a class="gallery-swiper-slide swiper-slide swiper-slide_1" data-path="img1">
-                                <img class="gallery-swiper-slide__img" src="img/gallery-img1-1.jpg" alt="Изображение картины художника">
-                            </a>
-                            <a class="gallery-swiper-slide swiper-slide swiper-slide_2" data-path="img1">
-                                <img class="gallery-swiper-slide__img" src="img/gallery-img1-2.jpg" alt="Изображение картины художника">
-                            </a>
-                            <a class="gallery-swiper-slide swiper-slide swiper-slide_3" data-path="img1">
-                                <img class="gallery-swiper-slide__img" src="img/gallery-img1-3.jpg" alt="Изображение картины художника">
-                            </a>
-                            <a class="gallery-swiper-slide swiper-slide swiper-slide_4" data-path="img1">
-                                <img class="gallery-swiper-slide__img" src="img/gallery-img2-1.jpg" alt="Изображение картины художника">
-                            </a>
-                            <a class="gallery-swiper-slide swiper-slide swiper-slide_5" data-path="img1">
-                                <img class="gallery-swiper-slide__img" src="img/gallery-img2-2.png" alt="Изображение картины художника">
-                            </a>
-                            <a class="gallery-swiper-slide swiper-slide swiper-slide_6" data-path="img1">
-                                <img class="gallery-swiper-slide__img" src="img/gallery-img2-3.jpg" alt="Изображение картины художника">
-                            </a>
-
-                        </div>
+                </li>
+                <li class="vacancy__item">
+                    <div class="vacancy__item-title">
+                        <h3 class="vacancy__name">2. Типы файлов, принимаемые в производство.</h3>
+                        <span class="vacancy__price"></span>
                     </div>
-
-                </div>
-
-            </div>
-
-
-        </section>
-        <section class="catalog" id="catalog">
-            <div class="catalog__container container">
-                <h2 class="catalog__title">
-                    Каталог
-                </h2>
-                <p class="catalog__text">
-                    Акционеры крупнейших компаний, которые представляют собой яркий пример континентально-европейского типа политической культуры, будут объявлены нарушающими общечеловеческие нормы этики и&nbsp;морали. Являясь всего лишь частью общей картины, стремящиеся
-                    вытеснить традиционное производство, нанотехнологии и&nbsp;по&nbsp;сей день остаются уделом либералов, которые жаждут быть функционально разнесены на&nbsp;независимые элементы.
-                </p>
-                <div class="catalog__content">
-                    <div class="catalog__left" id="artist-content">
-
-                        <div data-target="btn1" id="btn1" class="catalog__artist catalog__artist--visible">
-                            <img src="img/benedito-img.jpg" alt="Бенедетто ди Биндо" class="catalog__img">
-                            <h3 class="catalog__name">Бенедетто ди&nbsp;Биндо</h3>
-
-                            <span class="catalog__date">1380-85г-1417г</span>
-                            <p class="catalog__descr">Бенедетто ди Биндо остался в истории искусства как сиенский художник, так сказать, «второго ряда», несмотря на то, что за свою короткую жизнь он выполнил ряд весьма престижных заказов, включая работы в Сиенском соборе (работы
-                                в главном соборе республики второстепенным художникам не поручались). Обучение он прошёл у Таддео ди Бартоло, крупного сиенского мастера поздней готики, в боттеге которого Бенедетто трудился вместе с Грегорио ди Чекко.
-                                Наибольшее влияние на его творчество оказали работы Симоне Мартини, в частности в выборе колорита, а тонко проработанные лица его персонажей напоминают произведения Джованни да Милано.
-                            </p>
-                        </div>
-                        <div data-target="btn2" class="catalog__artist">
-                            <img src="img/bergonione-img.jpg" alt="Бергоньоне, Амброджо" class="catalog__img">
-                            <h3 class="catalog__name">Бергоньоне, Амброджо</h3>
-
-                            <span class="catalog__date">1453, Фоссано, провинция Кунео — 1523, Милан</span>
-                            <p class="catalog__descr">Прозвище говорит о&nbsp;его тяготении к&nbsp;бургундской школе, по&nbsp;манере ему близок Винченцо Фоппа. Испытал влияние Леонардо да&nbsp;Винчи. Наиболее известен работами 1486&ndash;1494&nbsp;в монастырской обители картезианцев
-                                Чертоза ди&nbsp;Павия. Позднее работал в&nbsp;Милане в&nbsp;базилике Сант-Эусторджо и&nbsp;церкви Сан-Сатиро, после 1497&nbsp;&mdash; в&nbsp;Лоди, в&nbsp;1512&nbsp;&mdash; в&nbsp;Бергамо, незадолго до&nbsp;смерти&nbsp;&mdash;
-                                снова в&nbsp;Милане, в&nbsp;базилике Сан-Симпличано. Его завещание датировано 4&nbsp;апреля 1523, в&nbsp;том&nbsp;же году он&nbsp;умер. Одним из&nbsp;его учеников считают Бернардино Луини.</p>
-                        </div>
-                        <div data-target="btn3" class="catalog__artist">
-                            <img src="img/bissolo-img.webp" alt="Биссоло, Франческо" class="catalog__img">
-                            <h3 class="catalog__name">Биссоло, Франческо</h3>
-
-                            <span class="catalog__date">1470 или 1472, Тревизо — 20 апреля 1554, Венеция</span>
-                            <p class="catalog__descr">Сын художника. Ученик Джованни Беллини. С&nbsp;1490 переехал в&nbsp;мастерскую Беллини. С&nbsp;1492 по&nbsp;1530 год работал в&nbsp;Венеции. Помогал учителю в&nbsp;работе над украшением Большого зала Совета Дворца дожей (Венеция).
-                                Принимал участие в&nbsp;создании украшений Церкви Иль Реденторе в&nbsp;Венеции. Художник эпохи Возрождения. В&nbsp;своём творчестве подражал Джорджоне. Работы художника хранятся ныне во&nbsp;многих музеях мира. В&nbsp;санкт-петербургском
-                                Эрмитаже находится его картина &laquo;Богоматерь с&nbsp;Младенцем Христом&raquo;. В&nbsp;Британской Национальной галерее&nbsp;&mdash; &laquo;Мадонна с&nbsp;Младенцем со&nbsp;святыми и&nbsp;донатором&raquo;. Ряд его полотен
-                                находится в&nbsp;музеях Варшавы, Лос-Анджелеса (Музей Нортона Саймона и&nbsp;Los Angeles County Museum of&nbsp;Art), Дэйтоновском институте искусств (штат Огайо, США) и&nbsp;др.
-                            </p>
-                        </div>
-                        <div data-target="btn4" class="catalog__artist">
-                            <img src="img/boltraffio-img.jpg" alt="Больтраффио, Джованни" class="catalog__img">
-                            <h3 class="catalog__name">Больтраффио, Джованни</h3>
-
-                            <span class="catalog__date">1466 или 1467, Милан — 1516, там же</span>
-                            <p class="catalog__descr">Вазари сообщает, что художник происходил из&nbsp;аристократической семьи. Воспитанный в&nbsp;традициях Фоппы, Бернардо Дзенале и&nbsp;Амброджо Бергоньоне, он&nbsp;прошёл обучение в&nbsp;мастерской Леонардо. Его первое произведение
-                                &laquo;Воскресение Христа, святой Леонард и&nbsp;святая Лючия&raquo; выполнено в&nbsp;1491 году совместно с&nbsp;Марко д&rsquo;Оджоно для миланской церкви Сан-Джованни-сул-Муро. Был придворным художником Лодовико Моро и&nbsp;славился
-                                своими психологическими портретами</p>
-                        </div>
-                        <div data-target="btn5" class="catalog__artist">
-                            <img src="img/bonsiniori-img.jpg" alt="Бонсиньори, Франческо" class="catalog__img">
-                            <h3 class="catalog__name">Бонсиньори, Франческо</h3>
-
-                            <span class="catalog__date"> 1460, Верона, Венецианская республика — 2 июля 1519,
-                                Кальдьеро</span>
-                            <p class="catalog__descr">Среди известных творений этого периода самыми ранними произведениями художника являются полотна &laquo;Мадонна со&nbsp;спящим младенцем&raquo; 1483 года и&nbsp;&laquo;Алтарь Даль Бово&raquo;, или &laquo;Мадонна на&nbsp;троне
-                                с&nbsp;предстоящими святыми и&nbsp;донатором Альтабеллой Авогадро&raquo; 1484&nbsp;года, которые ныне входят в&nbsp;собрание Общественного музея Вероны.</p>
-                        </div>
-                        <div data-target="btn6" class="catalog__artist">
-                            <img src="img/bottichini-img.jpg" alt="Боттичини, Рафаэлло" class="catalog__img">
-                            <h3 class="catalog__name">Боттичини, Рафаэлло</h3>
-
-                            <span class="catalog__date">11 сентября 1477, Флоренция — известен до 1520 года</span>
-                            <p class="catalog__descr">Рафаэлло принадлежал к&nbsp;флорентийской артистической династии&nbsp;&mdash; его дед, Джованни ди&nbsp;Доменико, был известен как художник, расписывавший игральные карты (хотя учёные не&nbsp;исключают, что он&nbsp;мог заниматься
-                                и&nbsp;более серьёзной живописью); его отец&nbsp;&mdash; Франческо ди&nbsp;Джованни, был известным флорентийским мастером. Первые художественные навыки Рафаэлло получил в&nbsp;мастерской отца; с&nbsp;этой мастерской связан
-                                и&nbsp;ранний период его творчества.</p>
-                        </div>
-                        <div data-target="btn7" class="catalog__artist">
-                            <img src="img/girlandaio-img.jpg" alt="Доменико Гирландайо" class="catalog__img">
-                            <h3 class="catalog__name">Доменико Гирландайо</h3>
-
-                            <span class="catalog__date">2 июня 1448–11 января 1494</span>
-                            <p class="catalog__descr">Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и&nbsp;сын Ридольфо. Глава художественной мастерской, где юный Микеланджело в&nbsp;течение года
-                                овладевал профессиональными навыками. Автор фресковых циклов, в&nbsp;которых выпукло, со&nbsp;всевозможными подробностями показана домашняя жизнь библейских персонажей (в&nbsp;их&nbsp;роли выступают знатные граждане Флоренции
-                                в&nbsp;костюмах того времени).</p>
-                        </div>
-                        <div data-target="btn8" class="catalog__artist">
-                            <img src="img/unknown-artist-img.svg" alt="Портрет художника" class="catalog__img">
-                            <h3 class="catalog__name">Что мы&nbsp;о&nbsp;нём знаем?</h3>
-
-                            <span class="catalog__date"></span>
-                            <p class="catalog__descr">Пока ничего... Зато мы&nbsp;точно знаем, что в&nbsp;галерее есть на&nbsp;что посмотреть!</p>
-                            <a href="#gallery" class="catalog-accordion-link">В галерею</a>
-                        </div>
-
-
-                    </div>
-
-                    <div class="catalog-accordion catalog__right" id="accordion">
-
-                        <h3 class="catalog-accordion__title">C&nbsp;1400 по&nbsp;1499&nbsp;гг </h3>
-
-
-                        <ul class="catalog-accordion__list list-reset">
-
-                            <li class="catalog-accordion__item">
-                                <a class="catalog-accordion__artist" data-path="btn1" href="#artist-content">
-                                    Бенедетто ди Биндо
-                                </a>
+                    <div class="vacancy__text">
+                        <ul class="vacancy__descr-list">
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                2.1 К производству принимаются файлы в формате PDF версии 1.4 – 1.7.
                             </li>
-                            <li class="catalog-accordion__item">
-                                <a class="catalog-accordion__artist" data-path="btn2" href="#artist-content">
-                                    Бергоньоне, Амброджо
-                                </a>
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                2.2 PDF-файлы должны быть сгенерированы из PostScript-файлов только с помощью программы
+                                программ Adobe Acrobat Distiller, либо Adobe InDesign. Не допускается прямого экспорта в
+                                PDF-формат из программ QuarkXpress, PageMaker, CorelDraw!, и т.д.). Настройки программ
+                                Adobe Acrobat Distiller, Adobe InDesign можно получить в отделе допечатной подготовки
+                                типографии.
                             </li>
-                            <li class="catalog-accordion__item">
-
-                                <a class="catalog-accordion__artist" data-path="btn3" href="#artist-content">
-                                    Биссоло, Франческо
-                                </a>
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                2.3 Прием открытых публикаций в программах верстки возможен только после обсуждения
+                                этого со специалистами отдела допечатной подготовки и в случае приема таких открытых
+                                публикаций работа по доработке файлов до требований Исполнителя и создание PDF файлов,
+                                оплачивается по дополнительному прайс-листу, а также оговариваются новые сроки
+                                производства Тиража, если данная услуга не была учтена в Спецификации.
                             </li>
-                            <li class="catalog-accordion__item">
-                                <a class="catalog-accordion__artist" data-path="btn4" href="#artist-content">
-                                    Больтраффио, Джованни
-                                </a>
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                2.4 К производству не принимаются публикации Мicrosoft Word - обязательное условие.
                             </li>
-                            <li class="catalog-accordion__item">
-                                <a class="catalog-accordion__artist" data-path="btn5" href="#artist-content">
-                                    Бонсиньори, Франческо
-                                </a>
-                            </li>
-                            <li class="catalog-accordion__item">
-                                <a class="catalog-accordion__artist" data-path="btn6" href="#artist-content">
-                                    Боттичини, Рафаэлло
-                                </a>
-                            </li>
-                            <li class="catalog-accordion__item">
-                                <a class="catalog-accordion__artist" data-path="btn8" href="#artist-content">
-                                    Брамантино
-                                </a>
-                            </li>
-                            <li class="catalog-accordion__item">
-                                <a class="catalog-accordion__artist" data-path="btn8" href="#artist-content">
-                                    Бреа, Людовико
-                                </a>
-                            </li>
-                            <li class="catalog-accordion__item">
-                                <a class="catalog-accordion__artist" data-path="btn8" href="#artist-content">
-                                    Бьяджо д’Антонио Туччи
-                                </a>
-                            </li>
-                            <li class="catalog-accordion__item">
-                                <a class="catalog-accordion__artist" data-path="btn8" href="#artist-content">
-                                    Веккьетта
-                                </a>
-                            </li>
-                            <li class="catalog-accordion__item">
-                                <a class="catalog-accordion__artist" data-path="btn8" href="#artist-content">
-                                    Андреа Верроккьо
-                                </a>
-                            </li>
-                            <li class="catalog-accordion__item">
-                                <a class="catalog-accordion__artist" data-path="btn7" href="#artist-content">
-                                    Доменико Гирландайо
-                                </a>
-                            </li>
-                            <li class="catalog-accordion__item">
-                                <a class="catalog-accordion__artist" data-path="btn8" href="#artist-content">
-                                    Беноццо Гоццоли
-                                </a>
-                            </li>
-                            <li class="catalog-accordion__item">
-                                <a class="catalog-accordion__artist" data-path="btn8" href="#artist-content">
-                                    Граначчи, Франческо
-                                </a>
-                            </li>
-                            <li class="catalog-accordion__item">
-                                <a class="catalog-accordion__artist" data-path="btn8" href="#artist-content">
-                                    Грегорио ди Чекко
-                                </a>
-                            </li>
-                            <li class="catalog-accordion__item">
-                                <a class="catalog-accordion__artist" data-path="btn8" href="#artist-content">
-                                    Джованни да Удине
-                                </a>
-                            </li>
-                            <li class="catalog-accordion__item">
-                                <a class="catalog-accordion__artist" data-path="btn8" href="#artist-content">
-                                    Джованни ди Паоло
-                                </a>
-                            </li>
-                            <li class="catalog-accordion__item">
-                                <a class="catalog-accordion__artist" data-path="btn8" href="#artist-content">
-                                    Джорджоне
-                                </a>
-                            </li>
-                            <li class="catalog-accordion__item">
-                                <a class="catalog-accordion__artist" data-path="btn8" href="#artist-content">
-                                    Парентино, Бернардо
-                                </a>
-                            </li>
-                            <li class="catalog-accordion__item">
-                                <a class="catalog-accordion__artist" data-path="btn8" href="#artist-content">
-                                    Пезеллино
-                                </a>
-                            </li>
-                            <li class="catalog-accordion__item">
-                                <a class="catalog-accordion__artist" data-path="btn8" href="#artist-content">
-                                    Пьетро Перуджино
-                                </a>
-                            </li>
-                            <li class="catalog-accordion__item">
-                                <a class="catalog-accordion__artist" data-path="btn8" href="#artist-content">
-                                    Перуцци, Бальдассаре
-                                </a>
-                            </li>
-                            <li class="catalog-accordion__item">
-                                <a class="catalog-accordion__artist" data-path="btn8" href="#artist-content">
-                                    Пизанелло
-                                </a>
-                            </li>
-                            <li class="catalog-accordion__item">
-                                <a class="catalog-accordion__artist" data-path="btn8" href="#artist-content">
-                                    Пинтуриккьо
-                                </a>
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                2.5 Самораспаковывающиеся архивированные файлы не принимаются.
                             </li>
                         </ul>
-                        <h3 class="catalog-accordion__title">C&nbsp;1500 по&nbsp;1599&nbsp;гг</h3>
-                        <div class="catalog-accordion__content">
-                            <div class="catalog-accordion__left"></div>
-                            <div class="catalog-accordion__right">
-                                <h2 class="catalog-accordion__subtitle">Здесь пока пусто</h2>
-                                <p class="catalog-accordion__text">А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя</p>
-                                <a href="#gallery" class="catalog-accordion__link">В галерею</a>
-
-                            </div>
-                        </div>
-
-
-                        <h3 class="catalog-accordion__title">C&nbsp;1600 по&nbsp;1699&nbsp;гг</h3>
-                        <div class="catalog-accordion__content">
-                            <div class="catalog-accordion__left"></div>
-                            <div class="catalog-accordion__right">
-                                <h2 class="catalog-accordion__subtitle">Здесь пока пусто</h2>
-                                <p class="catalog-accordion__text">А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя</p>
-                                <a href="#gallery" class="catalog-accordion__link">В галерею</a>
-
-                            </div>
-                        </div>
-                        <h3 class="catalog-accordion__title">C&nbsp;1700 по&nbsp;1799&nbsp;гг</h3>
-                        <div class="catalog-accordion__content">
-                            <div class="catalog-accordion__left"></div>
-                            <div class="catalog-accordion__right">
-                                <h2 class="catalog-accordion__subtitle">Здесь пока пусто</h2>
-                                <p class="catalog-accordion__text">А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя</p>
-                                <a href="#gallery" class="catalog-accordion__link">В галерею</a>
-
-                            </div>
-                        </div>
-                        <h3 class="catalog-accordion__title">C&nbsp;1800 по&nbsp;1899&nbsp;гг</h3>
-                        <div class="catalog-accordion__content">
-                            <div class="catalog-accordion__left"></div>
-                            <div class="catalog-accordion__right">
-                                <h2 class="catalog-accordion__subtitle">Здесь пока пусто</h2>
-                                <p class="catalog-accordion__text">А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя</p>
-                                <a href="#gallery" class="catalog-accordion__link">В галерею</a>
-
-                            </div>
-                        </div>
-                        <h3 class="catalog-accordion__title">C&nbsp;1900 по&nbsp;1999&nbsp;гг</h3>
-                        <div class="catalog-accordion__content">
-                            <div class="catalog-accordion__left"></div>
-                            <div class="catalog-accordion__right">
-                                <h2 class="catalog-accordion__subtitle">Здесь пока пусто</h2>
-                                <p class="catalog-accordion__text">А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя</p>
-                                <a href="#gallery" class="catalog-accordion__link">В галерею</a>
-
-                            </div>
-                        </div>
-                        <h3 class="catalog-accordion__title">C&nbsp;2000&nbsp;г</h3>
-                        <div class="catalog-accordion__content">
-                            <div class="catalog-accordion__left"></div>
-                            <div class="catalog-accordion__right">
-                                <h2 class="catalog-accordion__subtitle">Здесь пока пусто</h2>
-                                <p class="catalog-accordion__text">А&nbsp;в&nbsp;галерее вы&nbsp;всегда можете найти что-то интересное для себя</p>
-                                <a href="#gallery" class="catalog-accordion__link">В галерею</a>
-
-                            </div>
-                        </div>
                     </div>
-
-
-                </div>
-            </div>
-
-        </section>
-
-        <section class="events" id="events">
-            <div class="events__container container">
-                <h2 class="events__title">События</h2>
-                <div class="events-sliders">
-                    <div class="events-button">
-                        <button class="events-button__prev swiper-button-prev btn-reset svg-btn-style">
-                            <svg width="50" height="50" viewBox="0 0 50 50" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M25 2.72191e-06C38.8071 2.11838e-06 50 11.1929 50 25C50 38.8071 38.8071 50 25 50C11.1929 50 -4.89256e-07 38.8071 -1.09278e-06 25C-1.69631e-06 11.1929 11.1929 3.32544e-06 25 2.72191e-06Z"
-                                    fill="#ECECEC" />
-                                <path
-                                    d="M25 2.72191e-06C38.8071 2.11838e-06 50 11.1929 50 25C50 38.8071 38.8071 50 25 50C11.1929 50 -4.89256e-07 38.8071 -1.09278e-06 25C-1.69631e-06 11.1929 11.1929 3.32544e-06 25 2.72191e-06Z"
-                                    stroke="none" />
-                                <path d="M23.3333 16.6667L31.6667 25L23.3333 33.3333" stroke="black" />
-                            </svg>
-                        </button>
-
-                        <button class="events-button__next swiper-button-next btn-reset svg-btn-style">
-                            <svg width="50" height="50" viewBox="0 0 50 50" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M25 2.72191e-06C38.8071 2.11838e-06 50 11.1929 50 25C50 38.8071 38.8071 50 25 50C11.1929 50 -4.89256e-07 38.8071 -1.09278e-06 25C-1.69631e-06 11.1929 11.1929 3.32544e-06 25 2.72191e-06Z"
-                                    fill="#ECECEC" />
-                                <path
-                                    d="M25 2.72191e-06C38.8071 2.11838e-06 50 11.1929 50 25C50 38.8071 38.8071 50 25 50C11.1929 50 -4.89256e-07 38.8071 -1.09278e-06 25C-1.69631e-06 11.1929 11.1929 3.32544e-06 25 2.72191e-06Z"
-                                    stroke="none" />
-                                <path d="M23.3333 16.6667L31.6667 25L23.3333 33.3333" stroke="black" />
-                            </svg>
-                        </button>
+                </li>
+                <li class="vacancy__item">
+                    <div class="vacancy__item-title">
+                        <h3 class="vacancy__name">3. Обозначение файлов.</h3>
+                        <span class="vacancy__price"></span>
                     </div>
-                    <div class="events-swiper-container swiper-container">
-
-                        <div class="events__swipir-wrapper swiper-wrapper">
-
-                            <div class="events-swiper-slide swiper-slide">
-                                <img class="events-swiper-slide__img" src="img/events-img1.jpg" alt="Изображение картины художника">
-                                <div class="events__descr">
-                                    <span class="events__place">Музей им. Щусева
-                                        с&nbsp;20&nbsp;марта по&nbsp;30&nbsp;апреля</span>
-                                    <h3 class="events__subtitle">Книжная гравюра в&nbsp;восприятии</h3>
-                                    <p class="events__text">Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и&nbsp;сын Ридольфо
-                                    </p>
-                                    <a href="#" class="events__link">Подробнее</a>
-                                </div>
-
-                            </div>
-                            <div class="events-swiper-slide swiper-slide">
-                                <img class="events-swiper-slide__img" src="img/events-img2.jpg" alt="Изображение картины художника">
-                                <div class="events__descr">
-                                    <span class="events__place">ММОМА<br>
-                                        24&nbsp;марта 19:00</span>
-                                    <h3 class="events__subtitle">&laquo;Открытая дискуссия&raquo;. Дмитрий Петров и&nbsp;Сергей Ильин.</h3>
-                                    <p class="events__text">Высокий уровень вовлечения представителей целевой аудитории является чётким доказательством простого факта</p>
-                                    <a href="#" class="events__link">Подробнее</a>
-                                </div>
-
-                            </div>
-                            <div class="events-swiper-slide swiper-slide">
-                                <img class="events-swiper-slide__img" src="img/events-img3.jpg" alt="Изображение картины художника">
-                                <div class="events__descr">
-                                    <span class="events__place">Еврейский музей
-                                        с&nbsp;31&nbsp;марта по&nbsp;21&nbsp;апреля</span>
-                                    <h3 class="events__subtitle">Выставка &laquo;Формация 2020&raquo;</h3>
-                                    <p class="events__text">Идейные соображения высшего порядка, а&nbsp;также современная методология разработки играет важную роль в&nbsp;формировании глубокомысленных рассуждений
-                                    </p>
-                                    <a href="#" class="events__link">Подробнее</a>
-                                </div>
-
-                            </div>
-                            <div class="events-swiper-slide swiper-slide">
-                                <img class="events-swiper-slide__img" src="img/events-img4.jpg" alt="Изображение картины художника">
-                                <div class="events__descr">
-                                    <span class="events__place">ММАМ
-                                        с&nbsp;8&nbsp;апреля по&nbsp;20&nbsp;мая</span>
-                                    <h3 class="events__subtitle">Джон Винзор. Фотографии из&nbsp;серии &laquo;Метафора&raquo;
-                                    </h3>
-                                    <p class="events__text">Один из&nbsp;ведущих флорентийских художников Кватроченто, основатель художественной династии, которую продолжили его брат Давид и&nbsp;сын Ридольфо
-                                    </p>
-                                    <a href="#" class="events__link">Подробнее</a>
-                                </div>
-
-                            </div>
-                            <div class="events-swiper-slide swiper-slide">
-                                <img class="events-swiper-slide__img" src="img/events-img5.jpg" alt="Изображение картины художника">
-                                <div class="events__descr">
-                                    <span class="events__place">Третьяковка на&nbsp;Крымском валу
-                                        с&nbsp;30&nbsp;марта по&nbsp;30&nbsp;апреля</span>
-                                    <h3 class="events__subtitle">XXIV Международная биеннале молодого искусства</h3>
-                                    <p class="events__text">Внезапно, реплицированные с&nbsp;зарубежных источников, современные исследования</p>
-                                    <a href="#" class="events__link">Подробнее</a>
-                                </div>
-
-                            </div>
-                        </div>
-
+                    <div class="vacancy__text">
+                        <ul class="vacancy__descr-list">
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                3.1 Название файла не должно превышать 20 знаков.
+                            </li>
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                3.2 В именах файлов могут использоваться только латинские буквы a-z и цифры 0-9.
+                                Использование кириллических символов не допускается.
+                            </li>
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                3.3 Для разделения слов и знаков должен использоваться знак подчеркивания «_». Для
+                                обозначения номера страницы в имени файла должен быть использован префикс «#» (знак
+                                «решетка»).
+                            </li>
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                3.4 Для удобства работы название файла должно соответствовать его содержанию. Например:
+                                02_catalog_#07.pdf (каталог №2, стр. 07). Для нумерации страниц используйте префикс «#»
+                                и лидирующий ноль. Например: #01, #02 ... (при объеме издания не более 99 страниц) или
+                                #001, #002 ... (при объеме издания не более 999 страниц).
+                            </li>
+                        </ul>
                     </div>
-                    <div class="pagination-container">
-                        <div class="events-button-pagination swiper-pagination"></div>
+                </li>
+                <li class="vacancy__item">
+                    <div class="vacancy__item-title">
+                        <h3 class="vacancy__name">4. Требования к шрифтам.</h3>
+                        <span class="vacancy__price"></span>
                     </div>
-
-                </div>
-
-
-
-            </div>
-        </section>
-
-        <section class="projects" id="projects">
-            <div class="projects__container container">
-                <h2 class="projects__title">Проекты</h2>
-                <div class="projects__text">
-                    Предварительные выводы: постоянное информационно-пропагандистское обеспечение нашей деятельности однозначно фиксирует необходимость своевременного выполнения сверхзадачи. А&nbsp;ещё независимые государства смешаны с&nbsp;не&nbsp;уникальными данными до&nbsp;степени
-                    совершённой неузнаваемости, из-за чего возрастает их&nbsp;статус бесполезности. Прежде всего, постоянное информационно-пропагандистское
-                    <div class="projects-tooltip">
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path class="projects-tooltip__background" fill-rule="evenodd" clip-rule="evenodd"
-                                d="M8 15C11.866 15 15 11.866 15 8C15 4.13401 11.866 1 8 1C4.13401 1 1 4.13401 1 8C1 11.866 4.13401 15 8 15Z"
-                                fill="white" />
-                            <path class="projects-tooltip__border"
-                                d="M15.5 8C15.5 12.1421 12.1421 15.5 8 15.5C3.85786 15.5 0.5 12.1421 0.5 8C0.5 3.85786 3.85786 0.5 8 0.5C12.1421 0.5 15.5 3.85786 15.5 8Z"
-                                stroke="#9D5CD0" />
-                            <path class="projects-tooltip__color"
-                                d="M7.26154 6.4551H8.73846V13H7.26154V6.4551ZM8 4.90259C7.71282 4.90259 7.4718 4.81126 7.27692 4.62861C7.09231 4.44597 7 4.22273 7 3.9589C7 3.69508 7.09231 3.47184 7.27692 3.28919C7.4718 3.0964 7.71282 3 8 3C8.28718 3 8.52308 3.09132 8.70769 3.27397C8.90256 3.44647 9 3.66464 9 3.92846C9 4.20243 8.90256 4.43582 8.70769 4.62861C8.52308 4.81126 8.28718 4.90259 8 4.90259Z"
-                                fill="#000000" />
-                        </svg>
-                        <div class="projects-tooltip__text">Tooltip text №1</div>
-                    </div> обеспечение нашей деятельности однозначно фиксирует необходимость экономической целесообразности принимаемых решений. И&nbsp;нет сомнений, что действия представителей оппозиции могут быть рассмотрены
-                    <div class="projects-tooltip">
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M15.5 8C15.5 12.1421 12.1421 15.5 8 15.5C3.85786 15.5 0.5 12.1421 0.5 8C0.5 3.85786 3.85786 0.5 8 0.5C12.1421 0.5 15.5 3.85786 15.5 8Z"
-                                stroke="#9D5CD0" />
-                            <path
-                                d="M7.26154 6.4551H8.73846V13H7.26154V6.4551ZM8 4.90259C7.71282 4.90259 7.4718 4.81126 7.27692 4.62861C7.09231 4.44597 7 4.22273 7 3.9589C7 3.69508 7.09231 3.47184 7.27692 3.28919C7.4718 3.0964 7.71282 3 8 3C8.28718 3 8.52308 3.09132 8.70769 3.27397C8.90256 3.44647 9 3.66464 9 3.92846C9 4.20243 8.90256 4.43582 8.70769 4.62861C8.52308 4.81126 8.28718 4.90259 8 4.90259Z"
-                                fill="black" />
-                        </svg>
-                        <div class="projects-tooltip__text">Tooltip text №2</div>
+                    <div class="vacancy__text">
+                        <ul class="vacancy__descr-list">
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                4.1 В работу принимаются только материалы, созданные с использованием оригинальных
+                                лицензионных шрифтов. В случае использования нелицензионных шрифтов типография не
+                                гарантирует верное их отображение, а также не несет ответственности за возможные сбои,
+                                связанные с их использованием.
+                            </li>
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                4.2. В публикации не должны быть использованы системные шрифты, установленные в систему
+                                при инсталляции Windows или MacOS.
+                            </li>
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                4.3 Все использованные в публикации шрифты должны быть внедрены в документ, либо
+                                представлены как векторная графика (переведены в кривые).
+                            </li>
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                4.4  Минимальное значение кегля для рубленых гарнитур при использовании «выворотки» -
+                                6pt. Дополнительно при печати текстов «вывороткой», либо текстов, состоящих из более,
+                                чем одного цвета, следует учитывать толщину линий таких текстов (п.6.6 и 6.16).
+                            </li>
+                        </ul>
                     </div>
-                    исключительно в&nbsp;разрезе маркетинговых и&nbsp;финансовых
-                    <div class="projects-tooltip">
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M15.5 8C15.5 12.1421 12.1421 15.5 8 15.5C3.85786 15.5 0.5 12.1421 0.5 8C0.5 3.85786 3.85786 0.5 8 0.5C12.1421 0.5 15.5 3.85786 15.5 8Z"
-                                stroke="#9D5CD0" />
-                            <path
-                                d="M7.26154 6.4551H8.73846V13H7.26154V6.4551ZM8 4.90259C7.71282 4.90259 7.4718 4.81126 7.27692 4.62861C7.09231 4.44597 7 4.22273 7 3.9589C7 3.69508 7.09231 3.47184 7.27692 3.28919C7.4718 3.0964 7.71282 3 8 3C8.28718 3 8.52308 3.09132 8.70769 3.27397C8.90256 3.44647 9 3.66464 9 3.92846C9 4.20243 8.90256 4.43582 8.70769 4.62861C8.52308 4.81126 8.28718 4.90259 8 4.90259Z"
-                                fill="black" />
-                        </svg>
-                        <div class="projects-tooltip__text">Tooltip text №3</div>
+                </li>
+                <li class="vacancy__item">
+                    <div class="vacancy__item-title">
+                        <h3 class="vacancy__name">5. Требования к изображениям.</h3>
+                        <span class="vacancy__price"></span>
                     </div>
-                    предпосылок. Банальные, но&nbsp;неопровержимые выводы, а&nbsp;также представители современных социальных резервов призывают нас к&nbsp;новым свершениям, которые, в&nbsp;свою очередь, должны быть смешаны с&nbsp;не&nbsp;уникальными данными до&nbsp;степени
-                    совершённой неузнаваемости. Подробнее:
-                    <a href="#" class="projects__text-link">blanchard-art.ru/projects</a>
-
-
-                </div>
-                <h3 class="projects__subtitle">Партнеры проектов</h3>
-                <div class="projects-sliders">
-                    <button class="projects-sliders__button-prev swiper-button-prev btn-reset svg-btn-style">
-                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M15 30C6.71573 30 8.89561e-07 23.2843 1.25168e-06 15C1.61379e-06 6.71573 6.71573 -1.01779e-06 15 -6.55671e-07C23.2843 -2.93554e-07 30 6.71573 30 15C30 23.2843 23.2843 30 15 30Z"
-                                fill="#ECECEC" />
-                            <path
-                                d="M15 30C6.71573 30 8.89561e-07 23.2843 1.25168e-06 15C1.61379e-06 6.71573 6.71573 -1.01779e-06 15 -6.55671e-07C23.2843 -2.93554e-07 30 6.71573 30 15C30 23.2843 23.2843 30 15 30Z"
-                                stroke="none" />
-                            <path d="M16 20L11 15L16 10" stroke="black" />
-                        </svg>
-
-                    </button>
-                    <button class="projects-sliders__button-next swiper-button-next btn-reset svg-btn-style">
-                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 -1.01779e-06 15 -6.55671e-07C6.71573 -2.93554e-07 2.93554e-07 6.71573 6.55671e-07 15C1.01779e-06 23.2843 6.71573 30 15 30Z"
-                                fill="#ECECEC" />
-                            <path
-                                d="M15 30C23.2843 30 30 23.2843 30 15C30 6.71573 23.2843 -1.01779e-06 15 -6.55671e-07C6.71573 -2.93554e-07 2.93554e-07 6.71573 6.55671e-07 15C1.01779e-06 23.2843 6.71573 30 15 30Z"
-                                stroke="none" />
-                            <path d="M14 20L19 15L14 10" stroke="black" />
-                        </svg>
-
-                    </button>
-
-
-                    <div class="projects-swiper-container swiper-container">
-
-
-
-
-
-                        <div class="projects__swipir-wrapper swiper-wrapper">
-                            <a href="#" class="projects-swiper-slide swiper-slide">
-                                <img src="img/projects-partners-logo1.png" alt="Логотип" class="projects-swiper-slide__img">
-                            </a>
-                            <a href="#" class="projects-swiper-slide swiper-slide">
-                                <img src="img/projects-partners-logo2.png" alt="Логотип" class="projects-swiper-slide__img">
-                            </a>
-                            <a href="#" class="projects-swiper-slide swiper-slide">
-                                <img src="img/projects-partners-logo3.png" alt="Логотип" class="projects-swiper-slide__img">
-                            </a>
-                            <a href="#" class="projects-swiper-slide swiper-slide">
-                                <img src="img/projects-partners-logo4.png" alt="Логотип" class="projects-swiper-slide__img">
-                            </a>
-                            <a href="#" class="projects-swiper-slide swiper-slide">
-                                <img src="img/projects-partners-logo5.png" alt="Логотип" class="projects-swiper-slide__img">
-                            </a>
-                            <a href="#" class="projects-swiper-slide swiper-slide">
-                                <img src="img/projects-partners-logo6.png" alt="Логотип" class="projects-swiper-slide__img">
-                            </a>
-                            <a href="#" class="projects-swiper-slide swiper-slide">
-                                <img src="img/projects-partners-logo7.png" alt="Логотип" class="projects-swiper-slide__img">
-                            </a>
-                            <a href="#" class="projects-swiper-slide swiper-slide">
-                                <img src="img/projects-partners-logo8.png" alt="Логотип" class="projects-swiper-slide__img">
-                            </a>
-                            <a href="#" class="projects-swiper-slide swiper-slide">
-                                <img src="img/projects-partners-logo9.png" alt="Логотип" class="projects-swiper-slide__img">
-                            </a>
-
-
-                        </div>
+                    <div class="vacancy__text">
+                        <ul class="vacancy__descr-list">
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                5.1 Разрешение. Разрешение изображений должно быть не ниже величины линиатуры растра,
+                                умноженной на 1,5-2. Применяемая линиатура растра определяется качеством используемой
+                                бумаги и возможностями печатной машины:
+                            </li>
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                <h4 class="vacancy__descr-title">Листовая печать:</h4>
+                                <ul class="duties">
+                                    <li class="duties__item">мелованная бумага: до 175lpi (70л/см), при согласовании с
+                                        технологом типографии возможно увеличение до 200lpi (80л/см);</li>
+                                    <li class="duties__item">немелованная бумага: до 150lpi (60л/см), при согласовании с
+                                        технологом типографии возможно увеличение до 175lpi (70л/см).
+                                    </li>
+                                </ul>
+                                <h4 class="vacancy__descr-title">Рулонная журнальная печать с сушкой:</h4>
+                                <ul class="duties">
+                                    <li class="duties__item">150lpi (60л/см), (при согласовании с технологом типографии
+                                        возможно увеличение до 175lpi).</li>
+                                </ul>
+                                <h4 class="vacancy__descr-title">Рулонная газетная печать:</h4>
+                                <ul class="duties">
+                                    <li class="duties__item">Coldest: 100lpi (40л/см);</li>
+                                    <li class="duties__item">Heatset: 133lpi (54л/см);</li>
+                                </ul>
+                            </li>
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                5.2 Суммарный объем красок. Максимальный суммарный объем красок в изображениях должен
+                                составлять:
+                            </li>
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                <h4 class="vacancy__descr-title">Листовая печать:</h4>
+                                <ul class="duties">
+                                    <li class="duties__item">немелованная бумага - не более 260%;</li>
+                                    <li class="duties__item">мелованная матовая бумага - не более 300%;</li>
+                                    <li class="duties__item">мелованная глянцевая -  не более 320%.</li>
+                                </ul>
+                            </li>
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                Следует принимать во внимание, что суммарное количество краски более 500% для лица и
+                                оборота на оттиске может вызвать такие дефекты при печати, как «отмарывание» и
+                                «перетискивание» красочного слоя.
+                            </li>
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                <h4 class="vacancy__descr-title">Рулонная журнальная печать с сушкой:</h4>
+                                <ul class="duties">
+                                    <li class="duties__item">немелованная бумага - не более 260%;</li>
+                                    <li class="duties__item">мелованная матовая бумага - не более  280%;</li>
+                                    <li class="duties__item">мелованная глянцевая бумага - не более 320%.</li>
+                                </ul>
+                            </li>
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                <h4 class="vacancy__descr-title">Газетная печать:</h4>
+                                <ul class="duties">
+                                    <li class="duties__item">с сушкой - не более 260%;</li>
+                                    <li class="duties__item">без сушки - не более 240%.</li>
+                                </ul>
+                            </li>
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                5.3 Градация изображений при использовании технологии CtP.
+                            </li>
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                <h4 class="vacancy__descr-title">Листовая печать, рулонная печать с сушкой (мелованная
+                                    бумага):</h4>
+                                <ul class="duties">
+                                    <li class="duties__item">пределы воспроизводимых значений градации изображения:
+                                        1-99%;</li>
+                                    <li class="duties__item">самый светлый участок растрового изображения: не менее
+                                        C1-M1-Y1-K0;</li>
+                                    <li class="duties__item">в тенях изображения каждая из составляющих CMYK не должна
+                                        превышать 99%.</li>
+                                </ul>
+                            </li>
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                <h4 class="vacancy__descr-title">Рулонная печать без сушки (газетная бумага):</h4>
+                                <ul class="duties">
+                                    <li class="duties__item">пределы воспроизводимых значений градации изображения
+                                        5-90%;</li>
+                                    <li class="duties__item">самый светлый участок растрового изображения: не менее
+                                        C5-M5-Y5-K0;</li>
+                                    <li class="duties__item">в тенях изображения каждая из составляющих CMYK не должна
+                                        превышать 90%./li>
+                                </ul>
+                            </li>
+                        </ul>
                     </div>
-                </div>
-
-            </div>
-        </section>
-        <section class="contacts" id="contacts">
-            <div class="contacts__top container flex">
-                <div class="contacts__address">
-                    <h3 class="contacts__title">Шоурум &#8470;&nbsp;4</h3>
-                    <address class="address">Леонтьевский переулок, дом 5/1</address>
-                </div>
-                <form class="contacts-form flex">
-
-                    <label class="contacts-form__label">
-                        <input class="contacts-form__input js-validate-error-field" type="text" name="name"
-                            placeholder="Имя*" data-validate-field="name">
-                    </label>
-                    <label class="contacts-form__label">
-                        <input class="contacts-form__input js-validate-error-field" type="tel" name="phone"
-                            placeholder="Телефон*" data-validate-field="tel">
-                    </label>
-                    <label class="contacts-form__label">
-                        <button class="contacts-form__btn btn-reset">Заказать обратный звонок</button>
-                    </label>
-
-
-                </form>
-                <div class="contacts-messengers">
-                    <h3 class="contacts-messengers__title">Связаться в&nbsp;один клик</h3>
-                    <div class="messengers flex">
-                        <a class="messengers__wtsp" href="https://web.whatsapp.com/" target="_blank">
-                            <svg class="messengers__svg" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M20 39.375C30.7005 39.375 39.375 30.7005 39.375 20C39.375 9.29948 30.7005 0.625 20 0.625C9.29948 0.625 0.625 9.29948 0.625 20C0.625 30.7005 9.29948 39.375 20 39.375Z"
-                                    fill="#30BF39" />
-                                <path
-                                    d="M25.875 21.751C25.625 21.626 24.3125 20.876 24.0625 20.8135C23.8125 20.6885 23.625 20.6885 23.4375 20.9385C23.25 21.1885 22.6875 21.8135 22.5625 21.9385C22.375 22.126 22.25 22.126 22 22.001C21.75 21.876 20.875 21.5635 19.875 20.5635C19.125 19.8135 18.5625 18.9385 18.4375 18.626C18.3125 18.376 18.4375 18.1885 18.5625 18.0635C18.6875 17.9385 18.8125 17.751 19 17.626C19.1875 17.501 19.1875 17.376 19.3125 17.1885C19.4375 17.001 19.375 16.876 19.3125 16.6885C19.25 16.501 18.75 15.1885 18.5625 14.626C18.375 14.0635 18.125 14.1885 18 14.126C17.8125 14.126 17.6875 14.0635 17.5 14.0635C17.25 14.0635 16.9375 14.1885 16.75 14.376C16.5 14.626 15.75 15.251 15.75 16.5635C15.75 17.876 16.625 19.251 16.75 19.376C16.875 19.5635 18.5 22.4385 21.1875 23.626C23.875 24.8135 23.875 24.4385 24.375 24.4385C24.875 24.4385 26 23.8135 26.25 23.251C26.5 22.626 26.5 22.0635 26.4375 22.001C26.3125 22.001 26.125 21.9385 25.875 21.751ZM20.875 28.1885C19.125 28.1885 17.5 27.6885 16.0625 26.751L12.6875 27.8135L13.8125 24.5635C12.75 23.0635 12.125 21.251 12.125 19.376C12.125 14.501 16.0625 10.5635 20.9375 10.5635C25.8125 10.5635 29.6875 14.501 29.6875 19.376C29.6875 24.251 25.75 28.1885 20.875 28.1885ZM20.875 8.81348C15.0625 8.81348 10.3125 13.5635 10.3125 19.376C10.3125 21.3135 10.8125 23.1885 11.8125 24.8135L9.875 30.501L15.75 28.626C17.3125 29.501 19.0625 29.9385 20.875 29.9385C26.6875 29.9385 31.4375 25.1885 31.4375 19.376C31.4375 13.5635 26.75 8.81348 20.875 8.81348Z"
-                                    fill="white" />
-                            </svg>
-                        </a>
-                        <a class="messengers__telegramm" href="https://telegram.org/" target="_blank">
-                            <svg class="messengers__svg" width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path
-                                    d="M20 40C31.0457 40 40 31.0457 40 20C40 8.95431 31.0457 0 20 0C8.95431 0 0 8.95431 0 20C0 31.0457 8.95431 40 20 40Z"
-                                    fill="#26A5E4" />
-                                <path fill-rule="evenodd" clip-rule="evenodd"
-                                    d="M9.05321 19.7889L20.7168 14.7649C26.2711 12.4547 27.4251 12.0534 28.1774 12.0402C28.3429 12.0373 28.7128 12.0783 28.9524 12.2727C29.1548 12.4369 29.2104 12.6587 29.2371 12.8143C29.2637 12.9699 29.2969 13.3246 29.2705 13.6017C28.9695 16.7641 27.6671 24.4386 27.0046 27.9806C26.7242 29.4794 26.1726 29.9819 25.6378 30.0311C24.4763 30.138 23.5944 29.2635 22.4694 28.5261L18.0061 25.528C16.0314 24.2268 17.3115 23.5116 18.4369 22.3428C18.7314 22.0368 23.8487 17.3823 23.9477 16.96C23.9597 16.9072 23.9716 16.7104 23.8547 16.6064C23.7377 16.5024 23.565 16.5384 23.4405 16.5663C23.264 16.6064 20.452 18.465 15.0044 22.1423C14.2062 22.6904 13.4832 22.9575 12.8355 22.9435C12.1214 22.9281 10.7478 22.5397 9.72661 22.2078C8.47408 21.8007 7.4786 21.5854 7.56532 20.8939C7.61044 20.5338 8.1064 20.1655 9.05317 19.789L9.05321 19.7889Z"
-                                    fill="white" />
-                            </svg>
-                        </a>
-
-
+                </li>
+                <li class="vacancy__item">
+                    <div class="vacancy__item-title">
+                        <h3 class="vacancy__name">6. Требования к элементам макета.</h3>
+                        <span class="vacancy__price"></span>
                     </div>
-                </div>
-            </div>
-            <div class="contacts__bottom">
-                <div id="map" style="width: 100%; height: 100%"></div>
-            </div>
-        </section>
+                    <div class="vacancy__text">
+                        <ul class="vacancy__descr-list">
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                6.1 Размер полосы верстки должен строго соответствовать обрезному формату издания.
+                                Размер предоставляемых файлов должен соответствовать дообрезному формату, т.е. формат
+                                полосы в готовом виде плюс припуски. Также следует обратить внимание на то, что размер
+                                всех сдаваемых полос в рамках одного издания обязательно должен быть одинаковым и иметь
+                                одинаковую (вертикальную или горизонтальную) ориентацию.
+                            </li>
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                6.2 Все элементы, печатаемые в край листа (под обрез) должны иметь «вылет» за край
+                                обрезного формата («припуск») 5мм.
+                            </li>
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                6.3 Все значимые элементы, находящиеся внутри полосы, должны располагаться на расстоянии
+                                не менее 5мм. от обрезного формата.
+                            </li>
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                6.4 Файлы, сдаваемые в работу, не должны содержать обрезных меток, крестов совмещения и
+                                другой служебной информации.
+                            </li>
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                <h4 class="vacancy__descr-title">6.5 При дизайне и верстке разворотных полос необходимо
+                                    учитывать реальные возможности полиграфического оборудования:</h4>
+                                <ul class="duties">
+                                    <li class="duties__item">недопустимо использование тонких линий совмещаемых в
+                                        развороте;</li>
+                                    <li class="duties__item">недопустимо использование совмещаемых в развороте значимых
+                                        объектов и портретов;
+                                    </li>
+                                    <li class="duties__item">недопустимо использование распашных объектов расположенных
+                                        с наклоном.</li>
+                                </ul>
+                            </li>
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                6.6 Толщина линий должна быть не менее 0,25pt, минимальная толщина негативных линий
+                                (выворотки) 1pt (листовая и ролевая журнальная печать). Не рекомендуется использовать
+                                линии с атрибутом Hairline, так как на различных выводных устройствах они выводятся
+                                по-разному.
+                            </li>
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                6.7 Все изображения должны быть повернуты, отмасштабированы и обрезаны в программе
+                                обработки изображения перед заверстыванием их в полосу.
+                            </li>
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                6.8 Все графические объекты должны быть размещены в публикации с обязательной связью с
+                                исходными файлами. Недопустимо помещение элементов в верстку через ClipBoard.
+                            </li>
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                6.9 Все цветные полутоновые изображения перед заверстыванием в полосу должны быть
+                                сохранены в цветовой модели CMYK в форматах EPS (без JPEG компрессии, Halftone Screen,
+                                Transfer Function) или TIFF (без LZW компрессии).
+                            </li>
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                6.10 Векторные изображения должны быть созданы в Adobe Illustrator, CorelDraw!  и
+                                экспортированы в формат EPS. Настройки для экспорта файлов в формате *,eps можно
+                                получить в отделе допечатной подготовки Исполнителя. Используемые в них триадные цвета
+                                должны быть сохранены как CMYK.
+                            </li>
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                6.11 В файлах не должны быть использованы дополнительные каналы и пути, кроме пути
+                                обтравки (Clipping Path) в файле EPS. Все растровые изображения, кроме сохраненных в
+                                формате EPS c обтравкой (Clipping Path) должны быть заверстаны в непрозрачные окна.
+                            </li>
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                6.12 Если изображение обтравливается, то формат файла должен быть только EPS без
+                                разделения каналов (без DCS).
+                            </li>
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                6.13 При преобразовании изображения из RGB в CMYK необходимо использовать калибровочный
+                                профиль в формате .icc (.icm) соответствующий параметрам цветового охвата печатного
+                                оборудования Исполнителя и типу использующейся бумаги. Цветовой профиль можно получить в
+                                отделе допечатной подготовки.
+                            </li>
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                6.14 Штриховые изображения должны быть сохранены как Bitmap.
+                            </li>
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                6.15 Черно-белые полутоновые изображения должны быть сохранены как Grayscale.
+                            </li>
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                6.16 Мелкий шрифт до 8pt и тонкие линии до 1pt должны формироваться без наложения, т.е
+                                состоять не более чем из одного триадного цвета.
+                            </li>
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                6.17 При наличии в публикации разворотных иллюстраций Заказчик обязан поставить в
+                                известность об этом отдел допечатной подготовки Исполнителя и предоставить список всех
+                                полос издания, где расположены разворотные иллюстрации.
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="vacancy__item">
+                    <div class="vacancy__item-title">
+                        <h3 class="vacancy__name">7. Рекомендованные величины треппинга.</h3>
+                        <span class="vacancy__price"></span>
+                    </div>
+                    <div class="vacancy__text">
+                        <ul class="vacancy__descr-list">
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                7.1 Направление и величина треппинга определяется Заказчиком с учетом диапазона
+                                рекомендуемых значений. Треппинг в элементах векторной графики должен составлять
+                                0,06-0,2мм. в зависимости от характера изображения.
+                            </li>
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                7.2 При обработке в штатном режиме автоматический треппинг Исполнителем не выполняется.
+                                Автоматический треппинг может быть выполнен только по письменной заявке Заказчика.
+                            </li>
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                7.3 Установку треппинга при использовании дополнительных красок производит Заказчик
+                                вручную в соответствующих программах верстки, а величину зоны перекрытия рекомендуется
+                                уточнить у технолога типографии, т.к. данный параметр определяется техническими
+                                возможностями совмещения печатной машины и порядком наложения красок.
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="vacancy__item">
+                    <div class="vacancy__item-title">
+                        <h3 class="vacancy__name">8. Параметры Overprint.</h3>
+                        <span class="vacancy__price"></span>
+                    </div>
+                    <div class="vacancy__text">
+                        <ul class="vacancy__descr-list">
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                8.1 По умолчанию композитные PDF-файлы обсчитываются в типографии с установкой «Black
+                                Overprint».
+                            </li>
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                8.2 В случае необходимости изменения параметров Overprint необходимо письменно
+                                обратиться в отдел допечатной подготовки.
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="vacancy__item">
+                    <div class="vacancy__item-title">
+                        <h3 class="vacancy__name">9. Дополнительные требования для продукции, скрепляемой на ВШРА.</h3>
+                        <span class="vacancy__price"></span>
+                    </div>
+                    <div class="vacancy__text">
+                        <ul class="vacancy__descr-list">
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                9.1 При объеме издания более 160 полос значимые элементы внутри полосы верстки должны
+                                располагаться на расстоянии не менее 10мм. от обрезного формата.
+                            </li>
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                9.2 У изданий, скрепляемых скобой, размер внутренних тетрадей будет меньше, чем тетрадей
+                                внешних. Это естественный эффект, возникающий при вложении одной тетради в другую,
+                                зависящий от толщины бумаги и пропорционально увеличивающийся с увеличением объема
+                                издания. Данный эффект влечет за собой возможное «зарезание» значимых элементов,
+                                находящихся вблизи от линии реза.
+                            </li>
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                9.3 Для минимизации эффекта Заказчику необходимо принимать во внимание эту особенность
+                                при разработке дизайна издания.
+                            </li>
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                9.4 Исполнитель имеет возможность самостоятельно выполнить роспуск при создании спуска
+                                полос. Для этого полосы издания должны быть заверстаны Заказчиком с учетом «вылета» под
+                                обрез 5мм с 4 сторон.
+                            </li>
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                9.5 При необходимости применения роспуска средствами Исполнителя Заказчику необходимо
+                                письменно уведомить об этом Исполнителя, согласовать параметры роспуска и учесть при
+                                верстке издания необходимость увеличения припусков на величину роспуска.
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="vacancy__item">
+                    <div class="vacancy__item-title">
+                        <h3 class="vacancy__name">10. Дополнительные требования для продукции, скрепляемой на КБС.</h3>
+                        <span class="vacancy__price"></span>
+                    </div>
+                    <div class="vacancy__text">
+                        <ul class="vacancy__descr-list">
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                <h4 class="vacancy__descr-title">10.1 Для продукции, скрепляемой способом КБС
+                                    дополнительно:</h4>
+                                <ul class="duties">
+                                    <li class="duties__item">необходимо учесть влияние корешка на текст и изображения,
+                                        проходящие через разворот. Роспуск должен составлять не менее 4+4мм.;</li>
+                                    <li class="duties__item">необходимо учесть, что боковая проклейка корешка уменьшает
+                                        полезную площадь внутренних полос обложки, первой и последней страницы блока
+                                        примерно на 5мм. со стороны корешка;
+                                    </li>
+                                    <li class="duties__item">при наличии разворотной иллюстрации между обложкой и блоком
+                                        необходимо учесть, что место стыковки будет сдвинуто на 2мм. на обложке и на
+                                        1мм. на блоке от края белого поля для склейки.</li>
+                                </ul>
+                            </li>
+                            <li class="vacancy__descr-item vacancy__descr-require">
 
-    </main>
-    <footer class="footer">
-        <div class="footer__container container flex">
-            <a href="#" class="footer__logo"><img src="img/footer-logo.svg" alt="Логотип" class="footer__logo-img"></a>
-            <div class="footer-social flex">
-                <a href="" class="footer-social__vk">
-                    <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M22.5 0C10.074 0 0 10.0736 0 22.5C0 34.9264 10.074 45 22.5 45C34.926 45 45 34.9264 45 22.5C45 10.0736 34.926 0 22.5 0ZM33.9132 24.9335C34.9619 25.9577 36.0714 26.9217 37.0128 28.0519C37.4299 28.5519 37.823 29.0688 38.1222 29.6503C38.5495 30.4794 38.1637 31.3886 37.4216 31.4379L32.812 31.4369C31.6215 31.5354 30.6741 31.0553 29.8754 30.2414C29.2378 29.5927 28.6462 28.8999 28.0321 28.2292C27.7812 27.9539 27.517 27.6947 27.2021 27.4907C26.5737 27.0819 26.0277 27.2072 25.6677 27.8636C25.3008 28.5316 25.217 29.2719 25.182 30.0153C25.1319 31.1022 24.8041 31.3863 23.7135 31.4374C21.3832 31.5465 19.1721 31.1929 17.117 30.0181C15.3041 28.9818 13.901 27.5193 12.6783 25.8634C10.2973 22.6353 8.47381 19.0924 6.8354 15.4478C6.46665 14.627 6.73642 14.1878 7.64194 14.1707C9.14639 14.1417 10.6508 14.1454 12.1553 14.1694C12.7676 14.179 13.1727 14.5294 13.4079 15.1071C14.2209 17.1074 15.2176 19.0105 16.4665 20.7755C16.7994 21.2455 17.1391 21.7142 17.623 22.0461C18.157 22.4125 18.5639 22.2915 18.8158 21.6953C18.9769 21.3164 19.0464 20.9113 19.0814 20.5053C19.2011 19.1145 19.2153 17.7242 19.0082 16.339C18.8793 15.4722 18.3918 14.9124 17.5277 14.7485C17.0876 14.6652 17.152 14.5022 17.3661 14.2508C17.7376 13.8163 18.0856 13.5474 18.7812 13.5474L23.9893 13.5465C24.8101 13.7076 24.9942 14.0759 25.1056 14.9027L25.1102 20.6903C25.1006 21.0103 25.2709 21.9586 25.8454 22.1681C26.3058 22.32 26.6096 21.9508 26.8849 21.6594C28.1339 20.334 29.0237 18.7697 29.8206 17.1506C30.1723 16.4366 30.4757 15.6978 30.7703 14.9575C30.9895 14.4101 31.3301 14.1408 31.9479 14.15L36.9631 14.156C37.1108 14.156 37.2609 14.1574 37.4073 14.1827C38.2525 14.3273 38.4841 14.6909 38.2226 15.5154C37.811 16.8109 37.0114 17.89 36.2297 18.9718C35.3919 20.1301 34.4983 21.2478 33.6687 22.4111C32.9064 23.4746 32.9667 24.01 33.9132 24.9335Z"
-                            fill="#CACACA" />
-                    </svg>
-                </a>
-                <a href="" class="footer-social__ok">
-                    <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path
-                            d="M19.279 14.9859C19.279 16.8409 20.7828 18.3449 22.6379 18.3449C24.4929 18.3449 25.9967 16.8409 25.9967 14.9859C25.9967 13.1309 24.4929 11.6271 22.6379 11.6271C20.7828 11.6271 19.279 13.1309 19.279 14.9859Z"
-                            fill="#CACACA" />
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M22.5 45C34.9264 45 45 34.9264 45 22.5C45 10.0736 34.9264 0 22.5 0C10.0736 0 0 10.0736 0 22.5C0 34.9264 10.0736 45 22.5 45ZM14.5125 14.9858C14.5125 10.4984 18.1503 6.86047 22.6379 6.86047C27.1254 6.86047 30.7632 10.4984 30.7632 14.9858C30.7632 19.4734 27.1254 23.1115 22.6379 23.1115C18.1503 23.1115 14.5125 19.4734 14.5125 14.9858ZM30.8117 27.291C30.7086 27.3737 28.7593 28.9142 25.5064 29.5769L30.4165 34.4432C31.28 35.3053 31.2811 36.7042 30.419 37.5677C29.5569 38.431 28.1583 38.4324 27.2945 37.5701L22.5276 32.928L18.1979 37.5402C17.7644 37.9899 17.1862 38.216 16.6074 38.216C16.0553 38.216 15.5027 38.0106 15.074 37.5972C14.1956 36.7502 14.1701 35.3516 15.0171 34.4733L19.6777 29.6025C16.3336 28.9555 14.3039 27.3749 14.1993 27.291C13.2475 26.5277 13.0946 25.1372 13.8579 24.1852C14.6212 23.2334 16.0115 23.0805 16.9636 23.8437C16.9837 23.86 19.1067 25.4549 22.5275 25.4572C25.9483 25.4549 28.0273 23.86 28.0474 23.8437C28.9995 23.0805 30.3899 23.2334 31.1531 24.1852C31.9165 25.1372 31.7636 26.5277 30.8117 27.291Z"
-                            fill="#CACACA" />
-                    </svg>
-                </a>
-
-
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="vacancy__item">
+                    <div class="vacancy__item-title">
+                        <h3 class="vacancy__name">11. Дополнительные требования для изданий, печатаемых на газетной
+                            бумаге.</h3>
+                        <span class="vacancy__price"></span>
+                    </div>
+                    <div class="vacancy__text">
+                        <ul class="vacancy__descr-list">
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                11.1 Не допускается использование текста менее 6pt.
+                            </li>
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                11.2 Черный текст размером менее 12pt должен печататься поверх фона без выворотки.
+                            </li>
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                11.3 Шрифт менее 12-14pt должен состоять из одного цвета (краски).
+                            </li>
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                11.4 Выворотка под шрифт менее 12-14pt должна состоять из одного цвета (краски).
+                            </li>
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                11.5 Толщина линий должна быть не менее 0,5pt, минимальная толщина негативных линий
+                                (выворотки) 1pt, при этом линия должна состоять из одного цвета (краски).
+                            </li>
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                <h4 class="vacancy__descr-title">11.6 Рекомендуемые параметры для цветоделения:</h4>
+                                <ul class="duties">
+                                    <li class="duties__item">метод генерации черного – GCR;</li>
+                                    <li class="duties__item">сумма красок - C+M+Y+K – не более 240%;</li>
+                                    <li class="duties__item">генерация черного - medium (средняя);</li>
+                                    <li class="duties__item">растискивание на 50% растре – 35%.</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="vacancy__item">
+                    <div class="vacancy__item-title">
+                        <h3 class="vacancy__name">12. Требования к файлам для выборочного лакирования, тиснения,
+                            вырубки.</h3>
+                        <span class="vacancy__price"></span>
+                    </div>
+                    <div class="vacancy__text">
+                        <ul class="vacancy__descr-list">
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                12.1 При подготовке макетов с выборочной УФ лакировкой, тиснением, вырубкой, Заказчиком
+                                передается отдельный файл, содержащий изображение лакирования, тиснения, вырубки. Размер
+                                страницы в файле для лакировки, тиснения, вырубки должен совпадать с размером файла для
+                                основной печати. Предпочтительнее, чтоб лакируемые области были выполнены в векторной
+                                графике. Лакируемые области должны быть закрашены 100% черным цветом (0-0-0-100 по
+                                палитре CMYK). При сплошном лакировании страницы Заказчиком должен быть предоставлен
+                                файл со сплошной заливкой. Контур лакировки должен перекрывать изображение не менее чем
+                                на 0,3 – 0,5мм. Минимальная толщина линии для УФ лакировки – 0,12мм., минимальный размер
+                                шрифта 5pt.
+                            </li>
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                12.2 Файл для клише (тиснение фольгой) должен быть подготовлен в формате *.cdr
+                                (CorelDraw) в векторном виде. Линии должны быть замкнуты, не иметь пересечений с другими
+                                линиями, полученное изображение должно быть закрашено 100% Black. Самой линии назначать
+                                толщину и какой-либо цвет ни в коем случае нельзя. Минимальная толщина областей тиснения
+                                0,1мм, получится только линия. Расстояние между областями тиснения не менее 0,3мм.
+                                Количество узлов (кривая Безье) должно быть минимально.
+                            </li>
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                12.3 Файл для изготовления вырубной формы должен быть предоставлен в формате *.cdr
+                                (Публикация в CorelDraw!). Ножи различных видов (режущие, перфорирующие, биговочные)
+                                необходимо обозначить линиями различных цветов, с пояснением соответствия цвета линии
+                                виду ножа. Расстояние между ножами любых видов не должно быть менее 5мм.
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="vacancy__item">
+                    <div class="vacancy__item-title">
+                        <h3 class="vacancy__name">13. Требования к цветам, используемым в публикации.</h3>
+                        <span class="vacancy__price"></span>
+                    </div>
+                    <div class="vacancy__text">
+                        <ul class="vacancy__descr-list">
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                13.1 При записи файла все системы управления цветом, такие как ICC profile embedding,
+                                Postscript CMS, Kodak CMS должны быть отключены.
+                            </li>
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                13.2 Подходящие по параметрам ICC-профили могут быть использованы для цветоделения на
+                                этапе подготовки изображений только в программе Adobe Photoshop.
+                            </li>
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                13.3 В публикации не должно присутствовать объектов, окрашенных в «посторонние» цвета.
+                                Например, при печати полноцветной работы без дополнительных смесевых цветов в файле
+                                публикации должны присутствовать только цвета Cyan, Magenta, Yellow, Black. В случае
+                                наличия в публикации объектов с другими цветами корректность воспроизведения таких
+                                объектов во время растрирования и последующей печати Исполнителем не гарантируется.
+                            </li>
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                13.4 Определение цвета может производиться только по каталогам стандартных цветов. Для
+                                определения триадных (Process) цветов должны использоваться каталоги PANTONE Process,
+                                смесевых - PANTONE Formula Guide соответствующие типу бумаги.
+                            </li>
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                13.5 Основные триадные цвета (Cyan, Magenta, Yellow, Black) не должны переопределяться и
+                                использоваться в качестве дополнительных плашечных цветов. Нельзя создавать в документе
+                                копий основных CMYK цветов и использовать их для оформления издания.
+                            </li>
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                13.6 Для определения триадных цветов наиболее близких по цвету к смесевым цветам
+                                рекомендуется использовать каталог Pantone Process Color Imaging Guide.
+                            </li>
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                13.7 В работу не принимаются макеты с черными плашками цвета C0-M0-Y0-K100. Для
+                                получения глубокого черного цвета на черных плашках рекомендуется использовать составной
+                                черный цвет (например C40-M30-Y30-K100). Для получения более подробной информации
+                                обращайтесь в отдел допечатной подготовки Исполнителя.
+                            </li>
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                13.8 Если ваша публикация не является полноцветной (например двух-трехцветная визитная
+                                карточка, листовка) задайте соответствующим цветам печати значения открытых цветов
+                                СМYК-палитры (СYАN, MAGENTA, YELLOW, BLACK).
+                            </li>
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                13.9 Запрещено использовать признак оверпринта (кроющий цвет) для объектов, которым это
+                                не требуется, если же все-таки в файлах требуется какой-то цвет оставить кроющим, то это
+                                в обязательном порядке обсуждается с отделом допечатной подготовки и делается на этом
+                                акцент. В случае же установки на объекты признака оверпринта (в частности белый
+                                кроющий), Исполнитель не несет ответственности за присутствие или отсутствие  этих
+                                объектов в печати. В публикациях/файлах разрешается использовать в качестве кроющих
+                                цветов только черный и пантоны (в случае пантонов обязательно нужно проговаривать этот
+                                момент с отделом допечатной подготовки).
+                            </li>
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                13.10 За консультациями и помощью в установке цветового профиля обращайтесь в отдел
+                                допечатнй подготовки Исполнителя.
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="vacancy__item">
+                    <div class="vacancy__item-title">
+                        <h3 class="vacancy__name">14. Требования к векторным иллюстрациям.</h3>
+                        <span class="vacancy__price"></span>
+                    </div>
+                    <div class="vacancy__text">
+                        <ul class="vacancy__descr-list">
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                14.1 B публикации, подготовленной в пакете CorelDRAW! не допускается наличие следующих
+                                объектов: Drop Shadow, Transparensy, Gradient Fill, Lens, Тexture Fill и Postscript
+                                Fill.
+                                Все вышеперечисленные эффекты CorelDRAW! должны быть конвертированы в СMYK-bitmap
+                                300dpi. Настройки для экспорта файлов в формате *,eps можно получить в отделе допечатной
+                                подготовки Исполнителя.
+                            </li>
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                14.2 В публикации, подготовленной в пакете Adobe Indesign при использовании растровых объектов с прозрачностями (PSD), все векторные объекты, в особенности текстовые элементы, должны размещаться в слоях выше этих растровых объектов.
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="vacancy__item">
+                    <div class="vacancy__item-title">
+                        <h3 class="vacancy__name">15. Порядок сдачи и утверждения файлов в печать через файловый сервер, подписание макета.</h3>
+                        <span class="vacancy__price"></span>
+                    </div>
+                    <div class="vacancy__text">
+                        <ul class="vacancy__descr-list">
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                15.1 При сдаче файлов в печать ОБЯЗАТЕЛЬНО наличие ТЕХНИЧЕСКОЙ СПЕЦИФИКАЦИИ в бумажном или электронном виде, содержащей развернутую информацию о заказе (количество страниц в издании, цветность, обрезной формат в мм., описание дополнительных элементов - вкладок, вклеек, информация о дополнительной отделке и другая важная информация об издании).
+                            </li>
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                <h4 class="vacancy__descr-title">15.2 При сдаче файлов на файловый сервер обязательно:</h4>
+                                <ul class="duties">
+                                    <li class="duties__item">перед заливкой файлов свяжитесь с отделом допечатной подготовки по поводу объемов заливаемых файлов и возможности их принятия на файловый сервер. Контактная информация указана на сайте Исполнителя;</li>
+                                    <li class="duties__item">после заливки файлов обязательно убедитесь, что информация о поступлении файлов дошла до отдела допечатной подготовки;
+                                    </li>
+                                    <li class="duties__item">заливка на файловый сервер разрешается только в архивах rar с максимальным сжатием, либо в формате PDF.</li>
+                                </ul>
+                            </li>
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                15.3 После проверки и обработки исходных файлов Заказчику высылается отчет о префлайт-проверке файлов, а также jpg-копии спусков полос на утверждение. Отчет о префлайт-проверке является PDF-файлом с именем типа «02_catalog_#07_rep1.pdf» (в случае, если проверялся файл «02_catalog_#07.pdf»). Jpg-файлы выкладываются заказчику в папку Out_Preview, находящуюся в корневом каталоге аккаунта Заказчика. После проверки jpg-файлов от Заказчика требуется подтверждающее электронное письмо на адрес электронной почты  <a href="mailto:ctp@lazurprint.ru" class="vacancy__conditions-link">ctp@lazurprint.ru.</a>
+                            </li>
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                15.4 При отсутствии у Заказчика возможности выполнить утверждение в печать в электронном виде предлагается распечатать и подписать в печать оригинал-макет ответственным за выпуск издания лицом со стороны Заказчика в отделе допечатной подготовки Исполнителя.
+                            </li>
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                15.5 Сборка издания осуществляется согласно ТЕХНИЧЕСКОЙ СПЕЦИФИКАЦИИ на заказ, а порядок страниц определяется согласно нумерации файлов (при многостраничных файлах - согласно порядку страниц внутри файлов). Колонцифры внутри издания признаком нумерации полос не являются.
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="vacancy__item">
+                    <div class="vacancy__item-title">
+                        <h3 class="vacancy__name">16. Порядок автоматизированной сдачи и утверждения файлов в системе Remote Access.</h3>
+                        <span class="vacancy__price"></span>
+                    </div>
+                    <div class="vacancy__text">
+                        <ul class="vacancy__descr-list">
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                16.1 По вопросам регистрации в системе Remote Access и предварительной настройки шаблонов Заказчик может обращаться в отдел допечатной подготовки Исполнителя. Руководство пользователя по работе в системе Remote Access доступно на сайте Исполнителя в разделе «Скачать».
+                            </li>
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                16.2 При сдаче файлов в печать ОБЯЗАТЕЛЬНО наличие ТЕХНИЧЕСКОЙ СПЕЦИФИКАЦИИ в бумажном или электронном виде, содержащей развернутую информацию о заказе (количество страниц в издании, цветность, обрезной формат в мм., описание дополнительных элементов - вкладок, вклеек, информация о дополнительной отделке и другая важная информация об издании).
+                            </li>
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                <h4 class="vacancy__descr-title">16.3 При сдаче файлов в систему Remote Access обязательно:</h4>
+                                <ul class="duties">
+                                    <li class="duties__item">перед загрузкой файлов свяжитесь с отделом допечатной подготовки по поводу объемов заливаемых файлов и возможности их принятия в систему Remote Access. Контактная информация указана на сайте Исполнителя;</li>
+                                    <li class="duties__item">после окончания загрузки файлов обязательно убедитесь, что информация о поступлении файлов дошла до отдела допечатной подготовки;
+                                    </li>
+                                    <li class="duties__item">заливка файлов в систему Remote Access разрешается только в формате PDF.</li>
+                                </ul>
+                            </li>
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                16.4 В случае приема файлов через систему Remote Access Заказчик получает на указанный при регистрации адрес электронной почты автоматические уведомления обо всех стадиях обработки файлов, а также отчеты о префлайт-проверке. Предварительный визуальный контроль контента производится Заказчиком в web-интерфейсе системы Remote Access. Фактом утверждения корректности обработки файлов в данном случае является включение Заказчиком соответствующих чекбоксов в системе Remote Access.
+                            </li>
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                16.5 Сборка издания осуществляется согласно ТЕХНИЧЕСКОЙ СПЕЦИФИКАЦИИ на заказ, а порядок страниц определяется согласно нумерации файлов (при многостраничных файлах - согласно порядку страниц внутри файлов). Колонцифры внутри издания признаком нумерации полос не являются.
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="vacancy__item">
+                    <div class="vacancy__item-title">
+                        <h3 class="vacancy__name">17. Что проверяется Исполнителем при приеме файлов.</h3>
+                        <span class="vacancy__price"></span>
+                    </div>
+                    <div class="vacancy__text">
+                        <ul class="vacancy__descr-list">
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                <h4 class="vacancy__descr-title">17.1 При проверке PDF-файлов считаются фатальной ошибкой следующие параметры публикации:</h4>
+                                <ul class="duties">
+                                    <li class="duties__item">несоответствие обрезного формата заявленному заказчиком;</li>
+                                    <li class="duties__item">наличие вылетов за обрезной формат менее 5 мм (в конкретных случаях допускается 3мм);</li>
+                                    <li class="duties__item">версия PDF выше 1.7;</li>
+                                    <li class="duties__item">модификация документа запрещена;</li>
+                                    <li class="duties__item">сохранение документа запрещено;</li>
+                                    <li class="duties__item">печать документа запрещена;</li>
+                                    <li class="duties__item">разрешение цветных растровых изображений менее 150dpi;</li>
+                                    <li class="duties__item">разрешение полутоновых растровых изображений менее 150dpi;</li>
+                                    <li class="duties__item">разрешение битмапов менее 600dpi;</li>
+                                    <li class="duties__item">шрифты не внедрены в документ;</li>
+                                    <li class="duties__item">кегль шрифта не определен;</li>
+                                    <li class="duties__item">отсутствует описание символа;</li>
+                                    <li class="duties__item">присутствует цвет RGB;</li>
+                                    <li class="duties__item">присутствует белый кроющий;</li>
+                                    <li class="duties__item">присутствует прозрачность;</li>
+                                    <li class="duties__item">присутствуют слои.</li>
+                                </ul>
+                            </li>
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                <h4 class="vacancy__descr-title">17.2 Следующие параметры PDF-файлов считаются требующими внимания Заказчика (сообщение со статусом «Предупреждение»):</h4>
+                                <ul class="duties">
+                                    <li class="duties__item">версия PDF ниже 1.4;</li>
+                                    <li class="duties__item">размер файла более 1024Мб;</li>
+                                    <li class="duties__item">создатель или приложение неизвестно;</li>
+                                    <li class="duties__item">треппинг-статус неизвесен;</li>
+                                    <li class="duties__item">Trim Box не определен;</li>
+                                    <li class="duties__item">присутствуют страницы с различными Trim Box;</li>
+                                    <li class="duties__item">Media Box отличен от Trim Box;</li>
+                                    <li class="duties__item">разрешение цветных растровых изображений менее 250dpi;</li>
+                                    <li class="duties__item">разрешение цветных растровых изображений более 650dpi;</li>
+                                    <li class="duties__item">разрешение полутоновых растровых изображений менее 250dpi;</li>
+                                    <li class="duties__item">разрешение полутоновых растровых изображений более 650dpi;</li>
+                                    <li class="duties__item">разрешение битмапов менее 1200dpi;</li>
+                                    <li class="duties__item">разрешение битмапов более 2400dpi;</li>
+                                    <li class="duties__item">присутствует цвет CMYK с ICC-профилем;</li>
+                                    <li class="duties__item">максимальное содержание красок превышает допустимое значение.</li>
+                                </ul>
+                            </li>
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                17.3 Исполнитель не ведет контроль качества цветокоррекции материалов заказчика, а также не производит вычитку текстов на предмет поиска каких-либо грамматических, либо смысловых ошибок.
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="vacancy__item">
+                    <div class="vacancy__item-title">
+                        <h3 class="vacancy__name">18. Часто встречающиеся ошибки.</h3>
+                        <span class="vacancy__price"></span>
+                    </div>
+                    <div class="vacancy__text">
+                        <ul class="vacancy__descr-list">
+                            <li class="vacancy__descr-item vacancy__descr-require">
+                                <ul class="duties">
+                                    <li class="duties__item">отсутствие шрифтов используемых в макете;</li>
+                                    <li class="duties__item">шрифты не имеют PostScript решения;</li>
+                                    <li class="duties__item">отсутствие изображений в макете;</li>
+                                    <li class="duties__item">объекты, печатаемые триадными красками, окрашены в SPOT-цвета;</li>
+                                    <li class="duties__item">изображения в цветовом режиме RGB;</li>
+                                    <li class="duties__item">неправильное разрешение растровых изображений (слишком маленькое или слишком большое);</li>
+                                    <li class="duties__item">отсутствие вылетов под обрез или неправильные вылеты, обрезы, позиционирование не по центру;</li>
+                                    <li class="duties__item">использование эффектов в CorelDRAW!;</li>
+                                    <li class="duties__item">использование эффектов прозрачности в Adobe Illustreator и CorelDRAW!</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+            <div class="vacancy__conditions">
+                Данные технические требования к исходным материалам доступны на сайте Исполнителя <a
+                    class="vacancy__conditions-link" href="https://lazurprint.ru/">lazurprint.ru.</a> По вопросам,
+                возникающим в процессе подготовки макета к сдаче, обращайтесь к специалистам отдела допечатной
+                подготовки Исполнителя.
             </div>
         </div>
-
-    </footer>
-
-
-    <div class="modals">
-        <div class="gallery-modals">
-            <div class="gallery-modals__item" data-target="img1">
-                <div class="gallery-modals__left">
-                    <img class="gallery-modals__img" src="img/gallery-modals-img.jpg" alt="Изображение картины художника">
-                </div>
-                <div class="gallery-modals__right">
-                    <button class="gallery-modals__btn-close btn-reset"><svg width="16" height="16" viewBox="0 0 16 16"
-                            fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M0.666641 15.3043L15.3333 3.17761e-05L16 0.695679L1.33331 15.9999L0.666641 15.3043Z"
-                                fill="black" />
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M0.666725 -2.96187e-06L15.3334 15.3042L14.6667 15.9999L5.76143e-05 0.695644L0.666725 -2.96187e-06Z"
-                                fill="black" />
-                        </svg>
-                    </button>
-                    <h3 class="gallery-modals__title">Казимир Малевич</h3>
-                    <h4 class="gallery-modals__subtitle">«Женщина с граблями»</h4>
-                    <span class="gallery-modals__date">1931–1932</span>
-                    <p class="gallery-modals__text">Картина из второй серии крестьянского цикла работ Казимира Малевича. Художник принялся за её создание в 1930–1931 годах, после того, как первый цикл был утерян после Берлинской и Варшавской выставок в 1927 году.</p>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
-
-
-
-    <script defer src="https://api-maps.yandex.ru/2.1/?apikey=вашAPI-ключ&lang=ru_RU"></script>
-    <script defer src="js/script.js"></script>
-
-
-
-
+    </section>
 </body>
 
 </html>
